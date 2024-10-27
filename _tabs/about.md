@@ -4,16 +4,16 @@ icon: fas fa-info-circle
 order: 3
 ---
 
-> Updated Skills.
+> Updated Work Experience.
 {: .prompt-info }
 
 <div class="container">
 	<div class="profile-teaser row">
 		<div class="col">
-			<h2 class="mb-3">I'm <span class="fw-bold">Jeongwon Kim</span>,</h2>
+			<h2 class="mb-3">I'm <b>Jeongwon Kim</b>,</h2>
 			<div class="mb-4">
 				an undergraduate student at Kyung Hee University, majoring in Computer Science.<br>
-                I'm recently interested in <span class="fw-bold">HCI/UX</span> and <span class="fw-bold">Mobile Computing</span>.<br>
+                I'm recently interested in <span class="fw-bold">HCI/UX</span> and <span class="fw-bold">Frontend Development</span>.<br>
 			</div><!--//bio-->
 			<div class="contact-list">
 				<ul class="list-unstyled">
@@ -35,20 +35,25 @@ order: 3
 
 ---
 ## 🎓  Education
-- **Kyung Hee University**<br>
+- **Kyung Hee University**, Seoul, Republic of Korea<br>
 Computer Science, College of Software &ensp;|&ensp; Mar.2020 - Present
 
-- **Sangmoon High School**<br>
+- **Sangmoon High School**, Seoul, Republic of Korea<br>
 General Course &ensp;|&ensp; Mar. 2017 - Feb. 2019
 
 <br>
 
 ---
+## 💼  Work Experience
+- **M5ers**, California, United States<br>
+Internship &ensp;|&ensp; Nov. 2024 - Present
+
+---
 ## 🎱  Activities
 - **GDSC KHU, Google Developer Student Club at Kyunghee University**<br>
-Frontend Member &ensp;|&ensp; Sep.2024 - Present
+Frontend Member &ensp;|&ensp; Sep. 2024 - Present
 
-- **Undergraduate Student in User Experience Computing Lab**<br>
+- **Undergraduate Student Researcher in User Experience Computing Lab**<br>
 [Visit UXC Lab](https://skpark-khu.github.io/) &ensp;|&ensp; Aug. 2024 - Present
 
 - **Altium, Band Club at Kyunghee University**<br>
