@@ -13,7 +13,7 @@ order: 3
 			<h2 class="mb-3">I'm <b>Jeongwon Kim</b>,</h2>
 			<div class="mb-4">
 				an undergraduate student at Kyung Hee University, majoring in Computer Science.<br>
-                I'm recently interested in <span class="fw-bold">HCI/UX</span> and <span class="fw-bold">Frontend Development</span>.<br>
+                I'm recently interested in <b>HCI/UX</b> and <b>Frontend Development</b>.<br>
 			</div><!--//bio-->
 			<div class="contact-list">
 				<ul class="list-unstyled">
@@ -44,9 +44,11 @@ General Course &ensp;|&ensp; Mar. 2017 - Feb. 2019
 <br>
 
 ---
-## 💼  Work Experience
+## 💻  Work Experience
 - **M5ers**, California, United States<br>
 Internship &ensp;|&ensp; Nov. 2024 - Present
+
+<br>
 
 ---
 ## 🎱  Activities
