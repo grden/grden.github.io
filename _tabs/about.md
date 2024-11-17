@@ -36,7 +36,7 @@ order: 3
 ---
 ## 🎓  Education
 - **Kyung Hee University**, Seoul, Republic of Korea<br>
-Computer Science, College of Software &ensp;|&ensp; Mar.2020 - Present
+Computer Science, College of Software &ensp;|&ensp; Mar. 2020 - Present
 
 - **Sangmoon High School**, Seoul, Republic of Korea<br>
 General Course &ensp;|&ensp; Mar. 2017 - Feb. 2019
@@ -64,8 +64,8 @@ Vice President &ensp;|&ensp; Jan. 2024 - Present
 <br>
 
 ---
-## 🎖  Awards & Honors
-- Scholarship, Kyunghee University, Academic Excellence Scholarship, 1st semester, 2024
+## 🏆  Awards & Scholarships
+- Scholarship(2nd place), Kyunghee University, Academic Excellence Scholarship, 1st semester, 2024
 - Scholarship, Kyunghee University, Academic Excellence Scholarship, 2nd semester, 2023
 
 <br>
