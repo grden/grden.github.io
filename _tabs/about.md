@@ -56,7 +56,7 @@ Internship &ensp;|&ensp; Nov. 2024 - Present
 Frontend Member &ensp;|&ensp; Sep. 2024 - Present
 
 - **Undergraduate Student Researcher in User Experience Computing Lab**<br>
-[Visit UXC Lab](https://skpark-khu.github.io/) &ensp;|&ensp; Aug. 2024 - Present
+[Visit UXC Lab](https://skpark-khu.github.io/) &ensp;|&ensp; Sep. 2024 - Present
 
 - **Altium, Band Club at Kyunghee University**<br>
 Vice President &ensp;|&ensp; Jan. 2024 - Present
@@ -75,6 +75,9 @@ Vice President &ensp;|&ensp; Jan. 2024 - Present
 - **Languages**<br>
 Korean : Native<br>
 English : Fluent (TOEIC 980, TEPS 498, OPIc IH)
+
+- **Software Fundamentals**<br>
+TOPCIT 630 (Level 3)
 
 - **Programming Languages**<br>
 <table style="table-layout: fixed; width: 75%;">
