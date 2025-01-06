@@ -36,7 +36,7 @@ order: 3
 ---
 ## 🎓  Education
 - **Kyung Hee University**, Seoul, Republic of Korea<br>
-Computer Science, College of Software &ensp;|&ensp; Mar. 2020 - Present
+Computer Science, College of Software (Cumulative GPA: 4.23/4.5) &ensp;|&ensp; Mar. 2020 - Present
 
 - **Sangmoon High School**, Seoul, Republic of Korea<br>
 General Course &ensp;|&ensp; Mar. 2017 - Feb. 2019
@@ -59,7 +59,7 @@ Frontend Member &ensp;|&ensp; Sep. 2024 - Present
 [Visit UXC Lab](https://skpark-khu.github.io/) &ensp;|&ensp; Sep. 2024 - Present
 
 - **Altium, Band Club at Kyunghee University**<br>
-Vice President &ensp;|&ensp; Jan. 2024 - Present
+Vice President &ensp;|&ensp; Jan. 2024 - Dec. 2024
 
 <br>
 
@@ -85,11 +85,13 @@ TOPCIT 630 (Level 3)
             <td style="text-align: center"><img src="/assets/img/posts/about/python.png" alt="python" width="16rem" height="16rem"/></td>
             <td style="text-align: center"><img src="/assets/img/posts/about/c++.png" alt="c++" width="16rem" height="16rem"/></td>
             <td style="text-align: center"><img src="/assets/img/posts/about/dart.png" alt="dart" width="16rem" height="16rem"/></td>
+            <td style="text-align: center"><img src="/assets/img/posts/about/javascript.png" alt="javascript" width="16rem" height="16rem"/></td>
         </tr>
         <tr>
             <td style="text-align: center">python</td>
             <td style="text-align: center">C++</td>
             <td style="text-align: center">Dart</td>
+            <td style="text-align: center">JavaScript</td>
         </tr>
 </table>
 
@@ -97,15 +99,23 @@ TOPCIT 630 (Level 3)
 <table style="table-layout: fixed; width: 100%;">
         <tr>
             <td style="text-align: center"><img src="/assets/img/posts/about/flutter.png" alt="flutter" width="14rem" height="14rem"/></td>
-            <td style="text-align: center"><img src="/assets/img/posts/about/grpc.png" alt="grpc" style="width: 2rem; height: 1rem;"/></td>
-            <td style="text-align: center"><img src="/assets/img/posts/about/firebase.png" alt="firebase" width="18rem" height="18rem"/></td>
+            <td style="text-align: center"><img src="/assets/img/posts/about/react.png" alt="React" style="width: 2rem; height: 1rem;"/></td>
             <td style="text-align: center"><img src="/assets/img/posts/about/figma.png" alt="figma" width="18rem" height="18rem"/></td>
         </tr>
         <tr>
             <td style="text-align: center">Flutter</td>
+            <td style="text-align: center">React</td>
+            <td style="text-align: center">Figma</td>
+        </tr> 
+</table>
+<table style="table-layout: fixed; width: 100%;">
+        <tr>
+            <td style="text-align: center"><img src="/assets/img/posts/about/grpc.png" alt="grpc" style="width: 2rem; height: 1rem;"/></td>
+            <td style="text-align: center"><img src="/assets/img/posts/about/firebase.png" alt="firebase" width="18rem" height="18rem"/></td>
+        </tr>
+        <tr>
             <td style="text-align: center">gRPC</td>
             <td style="text-align: center">Firebase</td>
-            <td style="text-align: center">Figma</td>
         </tr> 
 </table>
 <table style="table-layout: fixed; width: 75%;">
@@ -118,5 +128,17 @@ TOPCIT 630 (Level 3)
             <td style="text-align: center">NumPy</td>
             <td style="text-align: center">pandas</td>
             <td style="text-align: center">Scikit-learn</td>
+        </tr> 
+</table>
+<table style="table-layout: fixed; width: 100%;">
+        <tr>
+            <td style="text-align: center"><img src="/assets/img/posts/about/jira.png" alt="jira" width="14rem" height="14rem"/></td>
+            <td style="text-align: center"><img src="/assets/img/posts/about/github.png" alt="Github" style="width: 2rem; height: 1rem;"/></td>
+            <td style="text-align: center"><img src="/assets/img/posts/about/slack.png" alt="Slack" width="18rem" height="18rem"/></td>
+        </tr>
+        <tr>
+            <td style="text-align: center">Jira</td>
+            <td style="text-align: center">GitHub</td>
+            <td style="text-align: center">Slack</td>
         </tr> 
 </table>
