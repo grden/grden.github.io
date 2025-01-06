@@ -80,7 +80,7 @@ English : Fluent (TOEIC 980, TEPS 498, OPIc IH)
 TOPCIT 630 (Level 3)
 
 - **Programming Languages**<br>
-<table style="table-layout: fixed; width: 75%;">
+<table style="table-layout: fixed; width: 100%;">
         <tr>
             <td style="text-align: center"><img src="/assets/img/posts/about/python.png" alt="python" width="16rem" height="16rem"/></td>
             <td style="text-align: center"><img src="/assets/img/posts/about/c++.png" alt="c++" width="16rem" height="16rem"/></td>
@@ -96,7 +96,7 @@ TOPCIT 630 (Level 3)
 </table>
 
 - **Frameworks & Tools**<br>
-<table style="table-layout: fixed; width: 100%;">
+<table style="table-layout: fixed; width: 75%;">
         <tr>
             <td style="text-align: center"><img src="/assets/img/posts/about/flutter.png" alt="flutter" width="14rem" height="14rem"/></td>
             <td style="text-align: center"><img src="/assets/img/posts/about/react.png" alt="React" style="width: 2rem; height: 1rem;"/></td>
@@ -108,7 +108,7 @@ TOPCIT 630 (Level 3)
             <td style="text-align: center">Figma</td>
         </tr> 
 </table>
-<table style="table-layout: fixed; width: 100%;">
+<table style="table-layout: fixed; width: 50%;">
         <tr>
             <td style="text-align: center"><img src="/assets/img/posts/about/grpc.png" alt="grpc" style="width: 2rem; height: 1rem;"/></td>
             <td style="text-align: center"><img src="/assets/img/posts/about/firebase.png" alt="firebase" width="18rem" height="18rem"/></td>
@@ -130,7 +130,7 @@ TOPCIT 630 (Level 3)
             <td style="text-align: center">Scikit-learn</td>
         </tr> 
 </table>
-<table style="table-layout: fixed; width: 100%;">
+<table style="table-layout: fixed; width: 75%;">
         <tr>
             <td style="text-align: center"><img src="/assets/img/posts/about/jira.png" alt="jira" width="14rem" height="14rem"/></td>
             <td style="text-align: center"><img src="/assets/img/posts/about/github.png" alt="Github" style="width: 2rem; height: 1rem;"/></td>
