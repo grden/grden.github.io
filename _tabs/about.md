@@ -99,7 +99,7 @@ TOPCIT 630 (Level 3)
 <table style="table-layout: fixed; width: 75%;">
         <tr>
             <td style="text-align: center"><img src="/assets/img/posts/about/flutter.png" alt="flutter" width="14rem" height="14rem"/></td>
-            <td style="text-align: center"><img src="/assets/img/posts/about/react.png" alt="React" style="width: 2rem; height: 1rem;"/></td>
+            <td style="text-align: center"><img src="/assets/img/posts/about/react.png" alt="React" style="width: 16rem; height: 16rem;"/></td>
             <td style="text-align: center"><img src="/assets/img/posts/about/figma.png" alt="figma" width="18rem" height="18rem"/></td>
         </tr>
         <tr>
@@ -132,9 +132,9 @@ TOPCIT 630 (Level 3)
 </table>
 <table style="table-layout: fixed; width: 75%;">
         <tr>
-            <td style="text-align: center"><img src="/assets/img/posts/about/jira.png" alt="jira" width="14rem" height="14rem"/></td>
-            <td style="text-align: center"><img src="/assets/img/posts/about/github.png" alt="Github" style="width: 2rem; height: 1rem;"/></td>
-            <td style="text-align: center"><img src="/assets/img/posts/about/slack.png" alt="Slack" width="18rem" height="18rem"/></td>
+            <td style="text-align: center"><img src="/assets/img/posts/about/jira.png" alt="jira" width="16rem" height="16rem"/></td>
+            <td style="text-align: center"><img src="/assets/img/posts/about/github.png" alt="Github" style="width: 16rem; height: 16rem;"/></td>
+            <td style="text-align: center"><img src="/assets/img/posts/about/slack.png" alt="Slack" width="16rem" height="16rem"/></td>
         </tr>
         <tr>
             <td style="text-align: center">Jira</td>
