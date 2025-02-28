@@ -46,7 +46,7 @@ General Course &ensp;|&ensp; Mar. 2017 - Feb. 2019
 ---
 ## 💻  Work Experience
 - **M5ers**, California, United States<br>
-Internship &ensp;|&ensp; Nov. 2024 - Present
+Internship &ensp;|&ensp; Nov. 2024 - Feb. 2025
 
 <br>
 
@@ -65,6 +65,7 @@ Vice President &ensp;|&ensp; Jan. 2024 - Dec. 2024
 
 ---
 ## 🏆  Awards & Scholarships
+- Scholarship, Kyunghee University, Academic Excellence Scholarship, 2nd semester, 2024
 - Scholarship(2nd place), Kyunghee University, Academic Excellence Scholarship, 1st semester, 2024
 - Scholarship, Kyunghee University, Academic Excellence Scholarship, 2nd semester, 2023
 
@@ -75,9 +76,6 @@ Vice President &ensp;|&ensp; Jan. 2024 - Dec. 2024
 - **Languages**<br>
 Korean : Native<br>
 English : Fluent (TOEIC 980, TEPS 498, OPIc IH)
-
-- **Software Fundamentals**<br>
-TOPCIT 630 (Level 3)
 
 - **Programming Languages**<br>
 <table style="table-layout: fixed; width: 100%;">
