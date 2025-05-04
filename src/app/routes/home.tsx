@@ -5,6 +5,7 @@ import UpdateSection from "@/features/Home/sections/updateSection";
 export default function Home() {
     return (
         <>
+            <title>Jeongwon Kim</title>
             <IntroSection />
             <Contacts />
             <UpdateSection />
