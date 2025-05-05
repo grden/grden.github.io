@@ -1,6 +1,6 @@
 export default function Skills() {
     return (
-        <div className="mb-16">
+        <div className="mb-24">
             <h2 className="text-lg font-semibold mb-6">🛠️ Skills</h2>
             <div className="border-l-3 border-gray-300 pl-4 py-1 mb-2">
                 <h3 className="font-medium mb-2">Languages</h3>
