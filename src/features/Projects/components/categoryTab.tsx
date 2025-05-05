@@ -9,7 +9,7 @@ type CategoryTabProps = {
 export function CategoryTab({ currentTab, setCurrentTab, tabList }: CategoryTabProps) {
     return (
         <ul className="flex w-full mb-6 sm:w-auto overflow-x-auto sm:overflow-visible scrollbar-hide">
-            <li className="flex gap-3 w-full">
+            <li className="flex gap-4 w-full">
                 {tabList.map(tab => (
                     <button
                         key={tab}

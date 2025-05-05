@@ -8,7 +8,6 @@ export default function ProjectGrid({ selectedProjects }: { selectedProjects: Pr
                 <Link
                     to={`/projects/${project.slug}`}
                     key={project.slug}
-                    className=""
                 >
                     <div className="mb-4">
                         <div className="w-full h-64 overflow-hidden rounded-lg">
