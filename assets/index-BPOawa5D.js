@@ -144,7 +144,7 @@ hardware control (on/off/reset), logging, register-level read/write access, and 
 `,s.jsx(r.p,{children:`My internship was located in San Jose.
 It was my first time living in the US, and it was a great opportunity to gain this kind of experience.
 I tried to make the most of my time there. Even though we had no car(and no driver's license),
-the other intern and I made full use of public transport and ride-sharing apps to explore the entire Bay Area.`}),`
+the other intern and I made full use of public transport and Uber to explore the entire Bay Area.`}),`
 `,s.jsxs("div",{className:"flex flex-row mx-auto",children:[s.jsx("img",{src:"/projects/IMG_1380.jpg",alt:"San Jose Photo 1",className:"rounded-lg w-1/4 object-cover my-4 mr-2"}),s.jsx("img",{src:"/projects/IMG_1259.jpg",alt:"San Jose Photo 2",className:"rounded-lg w-1/4 object-cover my-4 mr-2"}),s.jsx("img",{src:"/projects/IMG_3421.png",alt:"Bay Area Photo",className:"rounded-lg w-2/4 object-cover my-4"})]}),`
 `,s.jsx(r.h2,{children:"Tools Used (by me)"}),`
 `,s.jsx(ri,{tags:["React","JavaScript","Docker","Jira"]})]})}function yg(i={}){const{wrapper:r}=i.components||{};return r?s.jsx(r,{...i,children:s.jsx(th,{...i})}):th(i)}const vg=Object.freeze(Object.defineProperty({__proto__:null,default:yg,frontmatter:mg},Symbol.toStringTag,{value:"Module"})),gg={title:"Indeed",date:"Feb 2024 - Jul 2024",role:"Lead Developer",thumbnail:"/projects/tutor.png"};function lh(i){const r={h2:"h2",p:"p",...i.components};return s.jsxs(s.Fragment,{children:[s.jsx(r.p,{children:"I built a Tutor matching platform. This full-stack mobile application was developed as part of the KHU SWCON37000 FSSP course."}),`
