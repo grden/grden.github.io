@@ -46,19 +46,14 @@ export default function ProjectDetails() {
 
             {/* Project header - Using project data from constants instead of frontmatter */}
             <div className="mb-8">
-                <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
+                <h1 className="text-3xl font-bold mb-4">{frontmatter.title}</h1>
                 <div className="flex flex-wrap gap-2 mb-6">
                     <p className="text-gray-500 mr-4">{frontmatter.role} &nbsp; · &nbsp; {frontmatter.date}</p>
-                    {/* {project.tags.map(tag => (
-                        <span key={tag} className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">
-                            {tag}
-                        </span>
-                    ))} */}
                 </div>
                 <img
-                    src={project.thumbnail}
-                    alt={project.title}
-                    className="w-full rounded-xl object-cover max-h-96"
+                    src={frontmatter.thumbnail}
+                    alt={frontmatter.title}
+                    className="w-full rounded-xl object-cover max-h-108"
                 />
             </div>
 

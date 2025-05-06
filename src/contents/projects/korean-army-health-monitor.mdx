@@ -1,0 +1,80 @@
+---
+title: "Korean Army Health Monitor"
+date: "Sep 2024 - Nov 2025"
+role: "Lead Developer"
+thumbnail: "/projects/roka-thumbnail.png"
+---
+
+import ToolTag from '@/components/ToolTags/toolTag';
+
+I built a real-time safety monitoring system combining hardware and software to prevent heat-related illnesses among Korean military.
+
+## Background
+Due to the rising temperatures caused by climate change, heat-related illnesses have become a critical issue in the Korean military. Existing protocols lacked objective and real-time data to proactively prevent these incidents.
+
+Our team proposed a solution to collect and transmit biometric data directly from soldiers in the field to the command center, enabling preemptive response.
+
+## What I Built
+We built a machine learning-based safety monitoring system including Arduino-based smartwatch, a mobile
+app, a machine learning backend, and a web dashboard that tracks soldier’s health in real-time and provides alerts to prevent heat-related illnesses in soldiers.
+
+<br/>
+
+**Architecture**
+<img 
+  src="/projects/roka-architecture.png" 
+  alt="System Architecture Diagram" 
+  className="mx-auto rounded-lg w-full my-4" 
+/>
+
+**Web Screenshots**
+<img 
+  src="/projects/roka-web.png" 
+  alt="Command Center Web Dashboard" 
+  className="mx-auto rounded-xl w-full my-4" 
+/>
+
+**Mobile Screenshots**
+<img 
+  src="/projects/roka.png" 
+  alt="Field Commander Mobile App" 
+  className="mx-auto rounded-lg w-full my-4" 
+/>
+
+## Predicting Body Temperatures
+Even conventional smartwatches, including high-end models like the Apple Watch Series 8, do not directly provide absolute body temperature. 
+They only detect relative temperature trends over time, with several limitations:
+- They measure skin temperature, not actual core body temperature.
+- Users can only view temperature differences compared to the previous day, not real-time values.
+
+<br/>
+To overcome these limitations, we implemented a novel machine learning-based method to estimate core body temperature from skin and ambient temperatures
+(by referencing <p className="cursor-pointer underline inline" onClick={() => window.open("https://abdn.elsevierpure.com/en/publications/wearable-sensors-based-human-core-body-temperature-computing-meth", "_blank")}>research by Jiang et al.</p> ↗).
+
+<br/>
+We collected a custom dataset of 500 samples, pairing actual body temperature (measured using a medical thermometer) with skin and ambient temperature (via our Arduino-based sensor).
+
+<div className="flex flex-row mx-auto justify-center">
+<img 
+  src="/projects/roka-ard-0.png" 
+  alt="Arduino 1" 
+  className="rounded-lg w-1/3 object-cover my-4 mr-4" 
+/>
+<img 
+  src="/projects/roka-ard-1.jpg" 
+  alt="Arduino 2" 
+  className="rounded-lg w-1/3 object-cover my-4" 
+/>
+</div>
+
+We then found RandomForestRegressor to be the most accurate and efficient model, achieving R² = 0.913 and average inference time under 50ms.
+The model is integrated into the system, allowing temperature estimation in the field.
+
+## What I Did
+- Participated in a team of 5 as a lead softeware engineer, collaborating with electrical engineering majors.
+- Designed and implemented a full data pipeline connecting hardware, mobile app, Firebase backend, FastAPI server, and web dashboard.
+- Implemented a Bluetooth-based communication system to transmit sensor data from the hardware to the app.
+- Created a machine learning model to estimate core body temperature from skin and ambient temperature.
+
+## Tools Used
+<ToolTag tags={["Flutter", "Firebase", "Arduino", "Scikit-learn", "FastAPI"]}/>

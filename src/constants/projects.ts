@@ -16,30 +16,39 @@ export type ProjectType = {
 
 export const PROJECTS: ProjectType[] = [
     {
-        slug: 'project-1',
-        title: 'Project One',
-        date: 'Fall 2025',
-        summary: 'A short description of project one',
-        thumbnail: '/projects/img2.jpg',
-        tags: ['React', 'TypeScript', 'Tailwind'],
-        category: 'Internship'
-    },
-    {
-        slug: 'project-2',
-        title: 'Project Two',
+        slug: 'ludens',
+        title: 'Ludens',
         date: 'Winter 2025',
-        summary: 'A short description of project two',
-        thumbnail: '/projects/img3.jpg',
-        tags: ['Next.js', 'Firebase', 'UI/UX'],
+        summary: 'Promotional website for Ludens, a student game development club at Kyung Hee University.',
+        thumbnail: '/projects/ludens-thumbnail.png',
+        tags: ["Next.js", "TypeScript", "Git", "GitHub", "Vercel"],
         category: 'Personal Project'
     },
     {
-        slug: 'project-3',
-        title: 'Project Three',
-        date: 'Winter 2025',
-        summary: 'A short description of project three',
-        thumbnail: '/projects/img1.jpg',
-        tags: ['React', 'TypeScript', 'Tailwind'],
+        slug: 'm5ers',
+        title: 'M5ers',
+        date: 'Winter 2024',
+        summary: 'Built a start of the web application to test and manage ASIC-based cryptocurrency mining machines.',
+        thumbnail: '/projects/m5ers-thumbnail.png',
+        tags: ["React", "JavaScript", "Docker", "Jira"],
         category: 'Internship'
     },
+    {
+        slug: 'korean-army-health-monitor',
+        title: 'Korean Army Health Monitor',
+        date: 'Fall 2024',
+        summary: 'A real-time safety monitoring system combining hardware and software to prevent heat-related illnesses among Korean military.',
+        thumbnail: '/projects/roka-thumbnail.png',
+        tags: ["Flutter", "Firebase", "Arduino", "Scikit-learn", "FastAPI"],
+        category: 'Personal Project'
+    },
+    {
+        slug: 'tutor',
+        title: 'Indeed',
+        date: 'Spring 2024',
+        summary: 'Tutor matching mobile application.',
+        thumbnail: '/projects/tutor.png',
+        tags: ["Figma", "Flutter", "Firebase", "gRPC", "Firebase", "MongoDB"],
+        category: 'Personal Project'
+    }
 ]

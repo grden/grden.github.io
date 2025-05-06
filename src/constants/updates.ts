@@ -8,16 +8,16 @@ export const UPDATES: UpdateType[] = [
     {
         title: "📖 Submitted the research paper to KCC 2025, awaiting acceptance.",
         date: "May 2025",
-        link: ""
+        link: "/publications"
     },
     {
         title: "🚀 Launched official website for Ludens, KHU's game development club.",
         date: "Feb 2025",
-        link: ""
+        link: "/projects/ludens"
     },
     {
         title: "👽 Started as a Software Engineer Intern at M5ers.",
         date: "Nov 2024",
-        link: ""
+        link: "/projects/m5ers"
     }
 ]

@@ -1,0 +1,88 @@
+---
+title: "M5ers"
+date: "Nov 2024 - Feb 2025"
+role: "Software Engineer Intern"
+thumbnail: "/projects/m5ers-thumbnail.png"
+---
+
+import ToolTag from '@/components/ToolTags/toolTag';
+
+I was a Software Engineer Intern at <p className="cursor-pointer underline inline" onClick={() => window.open("https://www.linkedin.com/in/bumsoo-kim-439b273/", "_blank")}>M5ers</p> ↗, a pre-launch startup, in the Winter of 2024.
+During my time there, I worked on a zero to one project, going through the design process and
+creating a web application to test and manage ASIC-based cryptocurrency mining machines.
+<br/>
+
+## What I Did
+- Wrote and maintained key technical documentation including Product Requirement Documents (PRD), API specifications, and UML diagrams,
+which aligned product vision and developer workflows.
+- Built the entire frontend of the application using React and JavaScript.
+- Used Jira for agile project management, breaking down tasks and tracking sprint progress.
+
+## What I Built
+The tool is designed to interface with custom hardware via UART, providing UI components for status monitoring, 
+hardware control (on/off/reset), logging, register-level read/write access, and nonce rolling management—similar in scope to Bitmain's Management Interface.
+<br/>
+
+**Architecture**
+
+<img 
+  src="/projects/m5ers-architecture.png" 
+  alt="M5ers Architecture Diagram" 
+  className="mx-auto rounded-lg w-full my-4" 
+/>
+**Read Register Feature**
+<img 
+  src="/projects/m5ers-screenshot-0.png" 
+  alt="Read Register Feature" 
+  className="mx-auto rounded-lg w-full my-4" 
+/>
+**Bottom Status Bar**
+<img 
+  src="/projects/m5ers-status-bar.png" 
+  alt="Bottom Status Bar" 
+  className="mx-auto rounded-lg w-full my-4" 
+/>
+
+## Building a Scalable Foundation
+As the project marked the starting point of the system, I focused on building a robust and scalable foundation to support future features and system expansion.
+
+<img 
+  src="/projects/m5ers-meme.jpg" 
+  alt="Development Meme" 
+  className="mx-auto rounded-lg w-72 my-4" 
+/>
+
+This included:
+- Defining clear API boundaries and component responsibilities to support collaboration between teams
+- Designing a modular frontend architecture with reusability and maintainability in mind
+- Implementing robust error handling across the frontend to ensure system stability and clear feedback during hardware communication failures
+- Utilizing Docker to containerize the frontend environment, streamlining development, testing, and deployment across machines
+
+The system is currently being integrated with live hardware.
+
+## The Experience
+My internship was located in San Jose.
+It was my first time living in the US, and it was a great opportunity to gain this kind of experience.
+I tried to make the most of my time there. Even though we had no car,
+the other intern and I made full use of public transport and ride-sharing apps to explore the entire Bay Area.
+
+<div className="flex flex-row mx-auto">
+<img 
+  src="/projects/IMG_1380.jpg" 
+  alt="San Jose Photo 1" 
+  className="rounded-lg w-1/4 object-cover my-4 mr-2" 
+/>
+<img 
+  src="/projects/IMG_1259.jpg" 
+  alt="San Jose Photo 2" 
+  className="rounded-lg w-1/4 object-cover my-4 mr-2" 
+/>
+<img 
+  src="/projects/IMG_3421.png" 
+  alt="Bay Area Photo" 
+  className="rounded-lg w-2/4 object-cover my-4"
+/>
+</div>
+
+## Tools Used (by me)
+<ToolTag tags={["React", "JavaScript", "Docker", "Jira"]}/>
