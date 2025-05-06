@@ -20,6 +20,7 @@ export default function Skills() {
                 <ul>
                     <li className="text-gray-500 mb-1">React, Next.js, Flutter</li>
                     <li className="text-gray-500 mb-1">Firebase, Docker, AWS</li>
+                    <li className="text-gray-500 mb-1">Figma</li>
                 </ul>
             </div>
             <div className="border-l-3 border-gray-300 pl-4 py-1 mb-2">
