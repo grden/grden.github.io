@@ -5,6 +5,15 @@ export default function Activities() {
             <ul>
                 <li className="border-l-3 border-gray-300 pl-4 py-1 mb-2">
                     <div className="flex flex-col md:flex-row justify-between mb-2">
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/khux.khux/" className="font-semibold text-black underline decoration-gray-400 hover:decoration-inherit transition-colors duration-200">
+                            KHUX, an UX/HCI Club @ KHU ↗
+                        </a>
+                        <p className="text-gray-500">Mar 2025 - Present</p>
+                    </div>
+                    <p className="text-gray-500">Member </p>
+                </li>
+                <li className="border-l-3 border-gray-300 pl-4 py-1 mb-2">
+                    <div className="flex flex-col md:flex-row justify-between mb-2">
                         <a target="_blank" rel="noopener noreferrer" href="https://uxc.khu.ac.kr/" className="font-semibold text-black underline decoration-gray-400 hover:decoration-inherit transition-colors duration-200">
                             User Experience Computing Lab @ KHU ↗
                         </a>
