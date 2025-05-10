@@ -18,16 +18,18 @@ export default function PublicationList() {
                             <p className="mb-3 text-gray-600">{publication.conference}</p>
 
                             <div className="flex flex-wrap">
-                                {publication.link && (
-                                    <a
-                                        href={publication.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="bg-gray-100 text-gray-800 text-sm font-semibold px-2 py-1 rounded inline-flex items-center"
-                                    >
-                                        <FaRegFilePdf className="mr-1" /> PDF
-                                    </a>
-                                )}
+
+                                <a
+                                    href={publication.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={`bg-gray-100 text-sm font-semibold px-2 py-1 rounded inline-flex items-center
+                                        ${publication.link ? 'text-gray-800 ' : 'text-gray-400 cursor-not-allowed'
+                                        }`}
+                                >
+                                    <FaRegFilePdf className="mr-1" /> PDF
+                                </a>
+
                             </div>
                         </div>
                     </div>
