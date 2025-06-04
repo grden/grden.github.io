@@ -6,8 +6,8 @@ export type UpdateType = {
 
 export const UPDATES: UpdateType[] = [
     {
-        title: "📖 Submitted the research paper to KCC 2025, awaiting acceptance.",
-        date: "May 2025",
+        title: "📖 Research paper on HCI got accepted to KCC 2025.",
+        date: "June 2025",
         link: "/publications"
     },
     {

@@ -9,8 +9,8 @@ export type PublicationType = {
 export const PUBLICATIONS: PublicationType[] = [
     {
         title: 'Development of a Personalized Content Filtering System for Upward-Comparison-Inducing Content',
-        authors: ['Jeongwon Kim', 'Eunho Kim', 'Sangkeun Park'],
-        conference: 'KCC 2025 (Under-review)',
+        authors: ['Jeongwon Kim', 'Eunnho Kim', 'Sangkeun Park'],
+        conference: 'KCC 2025 (Accepted)',
         thumbnail: '/publications/kcc2025-3.jpg',
     },
 ]
