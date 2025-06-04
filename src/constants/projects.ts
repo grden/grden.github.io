@@ -48,7 +48,7 @@ export const PROJECTS: ProjectType[] = [
         date: 'Spring 2024',
         summary: 'Tutor matching mobile application.',
         thumbnail: '/projects/tutor.png',
-        tags: ["Figma", "Flutter", "Firebase", "gRPC", "Firebase", "MongoDB"],
+        tags: ["Figma", "Flutter", "Firebase", "gRPC", "MongoDB"],
         category: 'Personal Project'
     }
 ]
