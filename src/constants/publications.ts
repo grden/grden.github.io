@@ -12,5 +12,6 @@ export const PUBLICATIONS: PublicationType[] = [
         authors: ['Jeongwon Kim', 'Eunnho Kim', 'Sangkeun Park'],
         conference: 'KCC 2025 (Accepted)',
         thumbnail: '/publications/kcc2025-3.jpg',
+        link: '/publications/최종본.pdf'
     },
 ]
