@@ -16,12 +16,30 @@ export type ProjectType = {
 
 export const PROJECTS: ProjectType[] = [
     {
+        slug: 'youtube-chips',
+        title: 'YouTube Chips',
+        date: 'Spring 2025',
+        summary: 'Chrome extension that allows users to easily add chips to their videos.',
+        thumbnail: '/projects/yc-thumbnail.png',
+        tags: ["React", "TypeScript", "FastAPI", "AWS", "Firebase"],
+        category: 'Personal Project'
+    },
+    {
+        slug: 'ezstress',
+        title: 'EzStress',
+        date: 'Spring 2025',
+        summary: 'Web service to predict load bottlenecks using AI, perform stress testing, and visualize the results.',
+        thumbnail: '/projects/ezstress-thumbnail-2.png',
+        tags: ["React", "TypeScript", "AWS", "Figma"],
+        category: 'Personal Project'
+    },
+    {
         slug: 'ludens',
         title: 'Ludens',
         date: 'Winter 2025',
         summary: 'Promotional website for Ludens, a student game development club at Kyung Hee University.',
         thumbnail: '/projects/ludens-thumbnail.png',
-        tags: ["Next.js", "TypeScript", "Git", "GitHub", "Vercel"],
+        tags: ["Next.js", "TypeScript", "Framer-motion", "GitHub", "Vercel", "Google Analytics"],
         category: 'Personal Project'
     },
     {

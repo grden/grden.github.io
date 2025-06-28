@@ -1,0 +1,80 @@
+---
+title: "EzStress"
+date: "Mar 2025 - June 2025"
+role: "Frontend Developer"
+thumbnail: "/projects/ezstress-thumbnail.png"
+---
+
+import ToolTag from '@/components/ToolTags/toolTag';
+
+I designed and developed a web service that predicts load bottlenecks using AI, performs stress testing, and visualizes the results.
+
+You can see the full source code of the project at <p className="cursor-pointer underline inline" onClick={() => window.open("https://github.com/cloud-computing-team-b", "_blank")}>GitHub</p> ↗.
+
+## Background
+
+Stress testing is essential for ensuring the stability of web services. But many development teams-especially smaller ones-struggle to perform sufficient testing due to its complexity and cost.
+This project aims to lower the barrier by providing an automated, fast and easy to use web testing environment(that is also cost-effective!).
+
+<div className="flex flex-row mx-auto mt-8 justify-center flex-wrap gap-4">
+<img 
+  src="/projects/ezstress-meme-1.jpg" 
+  alt="meme 1"
+  className="rounded-lg max-w-full w-64 md:w-80 flex-shrink" 
+/>
+<img 
+  src="/projects/ezstress-meme-2.png" 
+  alt="meme 2" 
+  className="rounded-lg max-w-full w-48 md:w-64 flex-shrink"
+/>
+</div>
+<p className="text-center text-gray-500">EzStress solves all thses problems</p>
+
+## What I Built
+
+EzStress uses LLM to estimate API traffic and automatically generate stress test scenarios based on realistic user patterns.
+Built on AWS Fargate, the project aims to support scalable testing and real-time monitoring, offering insightes for service optimization.
+<br/>
+
+**System Architecture**
+<img 
+  src="/projects/ezstress-architecture.png" 
+  alt="system architecture" 
+  className="mx-auto rounded-lg w-full my-4" 
+/>
+**Test Execution Flow**
+
+I tried to implement an intuitive, seamless flow from service registration and authentication to test execution and result analysis.
+
+<img 
+  src="/projects/ezstress-test-1.png" 
+  alt="test setup" 
+  className="mx-auto rounded-lg w-full my-4 border border-gray-300" 
+/>
+<img 
+  src="/projects/ezstress-test-2.png" 
+  alt="test loading" 
+  className="mx-auto rounded-lg w-full my-4 border border-gray-300" 
+/>
+<br/>
+**Test Results Visualization Components**
+<img 
+  src="/projects/ezstress-test-result.png" 
+  alt="test results visualization components" 
+  className="mx-auto rounded-lg w-full my-4 border border-gray-300" 
+/>
+<br/>
+
+## Result
+
+EzStress offers two key advantages.
+- Cost-efficient: Enables stress testing at under $0.10 per 100 users, avoiding high license or infrastructure costs of traditional tools.
+- User-friendly: No scripting or setup required. Users simply specify test parameters, and the system runs automated tests that take only a few hours at most.
+
+## What I Did
+
+- Participated in a 6-person team to design and develop the frontend using TypeScript and React.
+- Designed the information architecture, wireframes, and user interface with a strong focus on usability and user experience using Figma.
+
+## Tools Used (by me)
+<ToolTag tags={["React", "TypeScript", "AWS", "Figma"]}/>

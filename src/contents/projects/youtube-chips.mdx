@@ -1,0 +1,62 @@
+---
+title: "YouTube Chips"
+date: "Apr 2025 - Present"
+role: "Lead Developer"
+thumbnail: "/projects/yc-thumbnail-2.png"
+---
+
+import ToolTag from '@/components/ToolTags/toolTag';
+import ReactPlayer from 'react-player';
+
+I built a promotional website for Ludens, a student game development club at Kyung Hee University.
+
+You can check out <p className="cursor-pointer underline inline" onClick={() => window.open("https://chromewebstore.google.com/detail/dmgbijacfoechdplahccjjhjkhhldpcd?utm_source=item-share-cb", "_blank")}>YouTube Chips on the Chrome Web Store</p> ↗.
+
+## Background
+
+I was frustrated with how easily I'd get distracted. I'd go to YouTube to find a lecture or tutorial, and end up watching game videos or random comedy skits for an hour.
+While YouTube's category chips offer some filtering, they don't persist across sessions, lack customization, and often miss the category I need.
+
+## Features
+
+YouTube Chips allows users to save preferred categories, auto-apply them on each visit, and intelligently match to the closest category.
+<br/>
+
+**Set Preferred Category**
+
+Save your preferred categories, which are auto-applied whenever you visit YouTube.
+The closest matching category is automatically selected if the exact one isn’t available, using OpenAI's embedding model.
+
+<ReactPlayer 
+  src="/projects/yc-feat-1.mp4"
+  className="mx-auto rounded-lg my-4"
+  width="100%"
+  height="auto"
+  muted
+  loop
+  playing
+/>
+
+<br/>
+**Time Based Category**
+
+Schedule different categories based on day or time (e.g. “Music” during working hours, “Game” on weekends)
+
+<ReactPlayer 
+  src="/projects/yc-feat-2.mp4"
+  className="mx-auto rounded-lg my-4"
+  width="100%"
+  height="auto"
+  muted
+  loop
+  playing
+/>
+
+## What I Did
+
+- Design and develop a Chrome extension using React and TypeScript.
+- Implement a FastAPI server on AWS EC2 to identify the most semantically similar category, using OpenAPI's embedding model.
+- Collecting usage logs via Firebase to analyze user patterns on YouTube and evaluate the extension’s effectiveness.
+
+## Tools Used
+<ToolTag tags={["React", "TypeScript", "FastAPI", "AWS", "Firebase"]}/>
