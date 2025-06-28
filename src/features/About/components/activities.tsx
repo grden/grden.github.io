@@ -14,15 +14,6 @@ export default function Activities() {
                 </li>
                 <li className="border-l-3 border-gray-300 pl-4 py-1 mb-2">
                     <div className="flex flex-col md:flex-row justify-between mb-2">
-                        <a target="_blank" rel="noopener noreferrer" href="https://uxc.khu.ac.kr/" className="font-semibold text-black underline decoration-gray-400 hover:decoration-inherit transition-colors duration-200">
-                            User Experience Computing Lab @ KHU ↗
-                        </a>
-                        <p className="text-gray-500">Sep 2024 - Present</p>
-                    </div>
-                    <p className="text-gray-500">Undergraduate Researcher </p>
-                </li>
-                <li className="border-l-3 border-gray-300 pl-4 py-1 mb-2">
-                    <div className="flex flex-col md:flex-row justify-between mb-2">
                         <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/gdgoc.khu/" className="font-semibold text-black underline decoration-gray-400 hover:decoration-inherit transition-colors duration-200">
                             Google Developer Student Club @ KHU ↗
                         </a>
@@ -33,7 +24,7 @@ export default function Activities() {
                 <li className="border-l-3 border-gray-300 pl-4 py-1 mb-2">
                     <div className="flex flex-col md:flex-row justify-between mb-2">
                         <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/khu_alttium/" className="font-semibold text-black underline decoration-gray-400 hover:decoration-inherit transition-colors duration-200">
-                            Alttium @ KHU ↗
+                            Alttium (Band Club) @ KHU ↗
                         </a>
                         <p className="text-gray-500">Jan 2024 - Dec 2024</p>
                     </div>
