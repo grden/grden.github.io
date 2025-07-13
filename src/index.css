@@ -1,6 +1,44 @@
+@font-face {
+    font-family: Pretendard;
+    src: url('../assets/fonts/Pretendard-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Pretendard;
+    src: url('../assets/fonts/Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Pretendard;
+    src: url('../assets/fonts/Pretendard-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Pretendard;
+    src: url('../assets/fonts/Pretendard-Bold.woff2') format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Pretendard;
+    src: url('../assets/fonts/Pretendard-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+}
+
 @import 'tailwindcss';
 
-/* Add specific styling for MDX content */
+@theme {
+  --font-sans: Pretendard, "sans-serif";
+}
+
+html {
+  font-family: var(--font-sans);
+}
+
+/* specific styling for MDX content */
 .prose h1 {
     font-size: 2.25rem;
     font-weight: 700;
