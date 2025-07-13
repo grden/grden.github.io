@@ -30,14 +30,14 @@ export default function Contacts() {
     return (
         <div className="flex gap-3 items-center">
             <div 
-                className="flex items-center cursor-pointer group relative hover:bg-gray-100 hover:px-2 py-1 rounded-md transition-all duration-200" 
+                className="flex items-center cursor-pointer group relative hover:bg-gray-100 hover:px-1.5 py-1 rounded-md transition-all duration-200 delay-150" 
                 onClick={onClick} 
                 id="resume"
                 onMouseEnter={() => handleMouseEnter('resume')}
                 onMouseLeave={handleMouseLeave}
             >
                 
-                <Icon icon="solar:file-text-bold-duotone" className="w-6 h-6 text-gray-500 group-hover:text-black transition-colors duration-200" />
+                <Icon icon="solar:file-text-bold-duotone" className="w-6 h-6 text-gray-500 group-hover:text-black transition-colors duration-200 delay-150" />
                 <span 
                     className={`ml-2 font-medium transition-all duration-500 ${
                         hoveredItem === 'resume' 
@@ -50,13 +50,13 @@ export default function Contacts() {
             </div>
 
             <div 
-                className="flex items-center cursor-pointer group relative hover:bg-gray-100 hover:px-2 py-1 rounded-md transition-all duration-200" 
+                className="flex items-center cursor-pointer group relative hover:bg-gray-100 hover:px-1.5 py-1 rounded-md transition-all duration-200 delay-150" 
                 onClick={onClick} 
                 id="email"
                 onMouseEnter={() => handleMouseEnter('email')}
                 onMouseLeave={handleMouseLeave}
             >
-                <Icon icon="solar:letter-bold-duotone" className="w-6 h-6 text-gray-500 group-hover:text-black transition-colors duration-200" />
+                <Icon icon="solar:letter-bold-duotone" className="w-6 h-6 text-gray-500 group-hover:text-black transition-colors duration-200 delay-150" />
                 <span 
                     className={`ml-2 font-medium transition-all duration-500 ${
                         hoveredItem === 'email' 
@@ -69,13 +69,13 @@ export default function Contacts() {
             </div>
 
             <div 
-                className="flex items-center cursor-pointer group relative hover:bg-gray-100 hover:px-2 py-1 rounded-md transition-all duration-200" 
+                className="flex items-center cursor-pointer group relative hover:bg-gray-100 hover:px-1.5 py-1 rounded-md transition-all duration-200 delay-150" 
                 onClick={onClick} 
                 id="github"
                 onMouseEnter={() => handleMouseEnter('github')}
                 onMouseLeave={handleMouseLeave}
             >
-                <Icon icon="mdi:github" className="w-7 h-7 text-gray-400 group-hover:text-black transition-colors duration-200" />
+                    <Icon icon="mdi:github" className="w-7 h-7 text-gray-400 group-hover:text-black transition-colors duration-200 delay-150" />
                 <span 
                     className={`ml-2 font-medium transition-all duration-500 ${
                         hoveredItem === 'github' 
