@@ -30,7 +30,7 @@ export default function Contacts() {
     return (
         <div className="flex gap-3 items-center">
             <div 
-                className="flex items-center cursor-pointer group relative" 
+                className="flex items-center cursor-pointer group relative hover:bg-gray-100 hover:px-2 py-1 rounded-md transition-all duration-200" 
                 onClick={onClick} 
                 id="resume"
                 onMouseEnter={() => handleMouseEnter('resume')}
@@ -50,7 +50,7 @@ export default function Contacts() {
             </div>
 
             <div 
-                className="flex items-center cursor-pointer group relative" 
+                className="flex items-center cursor-pointer group relative hover:bg-gray-100 hover:px-2 py-1 rounded-md transition-all duration-200" 
                 onClick={onClick} 
                 id="email"
                 onMouseEnter={() => handleMouseEnter('email')}
@@ -69,7 +69,7 @@ export default function Contacts() {
             </div>
 
             <div 
-                className="flex items-center cursor-pointer group relative" 
+                className="flex items-center cursor-pointer group relative hover:bg-gray-100 hover:px-2 py-1 rounded-md transition-all duration-200" 
                 onClick={onClick} 
                 id="github"
                 onMouseEnter={() => handleMouseEnter('github')}
