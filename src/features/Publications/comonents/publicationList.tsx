@@ -1,5 +1,5 @@
 import { PUBLICATIONS } from "@/constants/publications";
-import { FaRegFilePdf } from "react-icons/fa6";
+import { Icon } from "@iconify/react";
 
 export default function PublicationList() {
     return (
@@ -23,11 +23,12 @@ export default function PublicationList() {
                                     href={publication.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className={`bg-gray-100 text-sm font-semibold px-2 py-1 rounded inline-flex items-center
+                                    className={`bg-gray-100 text-sm font-semibold px-1.5 py-1 rounded inline-flex items-center
                                         ${publication.link ? 'text-gray-800 ' : 'text-gray-400 cursor-not-allowed'
                                         }`}
                                 >
-                                    <FaRegFilePdf className="mr-1" /> PDF
+                                    <Icon icon="mdi:file-pdf-box" className="w-5 h-5 mr-1" />
+                                    Read Paper
                                 </a>
 
                             </div>

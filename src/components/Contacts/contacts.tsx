@@ -1,7 +1,5 @@
 import { EMAIL, GITHUB, RESUME } from "@/constants/contacts"
-import { FaGithub } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { PiReadCvLogoBold } from "react-icons/pi";
+import { Icon } from "@iconify/react";
 import { useState } from "react";
 
 export default function Contacts() {
@@ -38,7 +36,8 @@ export default function Contacts() {
                 onMouseEnter={() => handleMouseEnter('resume')}
                 onMouseLeave={handleMouseLeave}
             >
-                <PiReadCvLogoBold className="w-6 h-6 text-gray-500 group-hover:text-black transition-colors duration-200" />
+                
+                <Icon icon="solar:file-text-bold-duotone" className="w-6 h-6 text-gray-500 group-hover:text-black transition-colors duration-200" />
                 <span 
                     className={`ml-2 font-medium transition-all duration-500 ${
                         hoveredItem === 'resume' 
@@ -57,7 +56,7 @@ export default function Contacts() {
                 onMouseEnter={() => handleMouseEnter('email')}
                 onMouseLeave={handleMouseLeave}
             >
-                <MdEmail className="w-6 h-6 text-gray-500 group-hover:text-black transition-colors duration-200" />
+                <Icon icon="solar:letter-bold-duotone" className="w-6 h-6 text-gray-500 group-hover:text-black transition-colors duration-200" />
                 <span 
                     className={`ml-2 font-medium transition-all duration-500 ${
                         hoveredItem === 'email' 
@@ -76,7 +75,7 @@ export default function Contacts() {
                 onMouseEnter={() => handleMouseEnter('github')}
                 onMouseLeave={handleMouseLeave}
             >
-                <FaGithub className="w-5.5 h-5.5 text-gray-500 group-hover:text-black transition-colors duration-200" />
+                <Icon icon="mdi:github" className="w-7 h-7 text-gray-400 group-hover:text-black transition-colors duration-200" />
                 <span 
                     className={`ml-2 font-medium transition-all duration-500 ${
                         hoveredItem === 'github' 
