@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { BiArrowBack } from 'react-icons/bi';
 
 export default function BackButton() {
     return (
@@ -7,8 +6,7 @@ export default function BackButton() {
             to="/projects"
             className="inline-flex items-center gap-2 text-gray-600 hover:text-black my-12"
         >
-            <BiArrowBack />
-            <span>Back to Projects</span>
+           <span className="ml-1 bottom-[0.05em] relative">←</span>Back to Projects
         </Link>
     );
 }

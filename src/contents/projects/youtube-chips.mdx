@@ -7,10 +7,11 @@ thumbnail: "/projects/yc-thumbnail-2.png"
 
 import ToolTag from '@/components/ToolTags/toolTag';
 import ReactPlayer from 'react-player';
+import ArrowLink from '@/components/ArrowLink/arrowLink';
 
 I built a promotional website for Ludens, a student game development club at Kyung Hee University.
 
-You can check out <p className="cursor-pointer underline inline" onClick={() => window.open("https://chromewebstore.google.com/detail/dmgbijacfoechdplahccjjhjkhhldpcd?utm_source=item-share-cb", "_blank")}>YouTube Chips on the Chrome Web Store</p> ↗.
+You can check out <ArrowLink href="https://chromewebstore.google.com/detail/dmgbijacfoechdplahccjjhjkhhldpcd?utm_source=item-share-cb" className="font-normal">YouTube Chips on the Chrome Web Store</ArrowLink>.
 
 ## Background
 
@@ -56,7 +57,7 @@ Schedule different categories based on day or time (e.g. “Music” during work
 
 - Design and develop a Chrome extension using React and TypeScript.
 - Implement a FastAPI server on AWS EC2 to identify the most semantically similar category, using OpenAPI's embedding model.
-- Collecting usage logs via Firebase to analyze user patterns on YouTube and evaluate the extension’s effectiveness.
+- Collect usage logs via Firebase to analyze user patterns on YouTube and evaluate the extension’s effectiveness.
 
 <img 
   src="/projects/yc-data.png" 

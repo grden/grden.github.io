@@ -1,3 +1,5 @@
+import ArrowLink from "@/components/ArrowLink/arrowLink";
+
 export default function Work() {
     return (
         <div className="mb-16">
@@ -5,11 +7,7 @@ export default function Work() {
             <ul>
                 <li className="border-l-3 border-gray-300 pl-4 py-1 mb-2">
                     <div className="flex flex-col md:flex-row justify-between mb-2">
-                        <p><span className="font-semibold">
-                            <a target="_blank" rel="noopener noreferrer" href="https://uxc.khu.ac.kr/" className="font-semibold text-black underline decoration-gray-400 hover:decoration-inherit transition-colors duration-200">
-                                User Experience Computing Lab ↗
-                            </a>
-                        </span> / Seoul, Republic of Korea</p>
+                        <span><ArrowLink href="https://uxc.khu.ac.kr/" className="font-semibold">User Experience Computing Lab</ArrowLink> / Seoul, Republic of Korea</span>
                         <p className="text-gray-500">Sep 2024 - Present</p>
                     </div>
                     <p className="text-gray-500">Undergraduate Researcher</p>
