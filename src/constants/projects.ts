@@ -20,7 +20,7 @@ export const PROJECTS: ProjectType[] = [
         title: 'YouTube Chips',
         date: 'Spring 2025',
         summary: 'Chrome extension that allows users to easily add chips to their videos.',
-        thumbnail: '/projects/yc-thumbnail.png',
+        thumbnail: '/projects/yc-thumbnail.jpg',
         tags: ["React", "TypeScript", "FastAPI", "AWS", "Firebase"],
         category: 'Personal Project'
     },
@@ -29,7 +29,7 @@ export const PROJECTS: ProjectType[] = [
         title: 'EzStress',
         date: 'Spring 2025',
         summary: 'Web service to predict load bottlenecks using AI, perform stress testing, and visualize the results.',
-        thumbnail: '/projects/ezstress-thumbnail-2.png',
+        thumbnail: '/projects/ezstress-thumbnail-2.jpg',
         tags: ["React", "TypeScript", "AWS", "Figma"],
         category: 'Personal Project'
     },
@@ -38,7 +38,7 @@ export const PROJECTS: ProjectType[] = [
         title: 'Ludens',
         date: 'Winter 2025',
         summary: 'Promotional website for Ludens, a student game development club at Kyung Hee University.',
-        thumbnail: '/projects/ludens-thumbnail.png',
+        thumbnail: '/projects/ludens-thumbnail.jpg',
         tags: ["Next.js", "TypeScript", "Framer-motion", "GitHub", "Vercel", "Google Analytics"],
         category: 'Personal Project'
     },
@@ -47,7 +47,7 @@ export const PROJECTS: ProjectType[] = [
         title: 'M5ers',
         date: 'Winter 2024',
         summary: 'Built a start of the web application to test and manage ASIC-based cryptocurrency mining machines.',
-        thumbnail: '/projects/m5ers-thumbnail.png',
+        thumbnail: '/projects/m5ers-thumbnail.jpg',
         tags: ["React", "JavaScript", "Docker", "Jira"],
         category: 'Internship'
     },
