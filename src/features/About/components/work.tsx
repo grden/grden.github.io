@@ -7,7 +7,14 @@ export default function Work() {
             <ul>
                 <li className="border-l-3 border-gray-300 pl-4 py-1 mb-2">
                     <div className="flex flex-col md:flex-row justify-between mb-2">
-                        <span><ArrowLink href="https://uxc.khu.ac.kr/" className="font-semibold">User Experience Computing Lab</ArrowLink> / Seoul, Republic of Korea</span>
+                        <span><ArrowLink href="https://www.keti.re.kr/main/main.php" className="font-semibold">KETI(Korea Electronics Technology Institute)</ArrowLink> / Seoul, Republic of Korea</span>
+                        <p className="text-gray-500">Sep 2025 - Present</p>
+                    </div>
+                    <p className="text-gray-500">Intern</p>
+                </li>
+                <li className="border-l-3 border-gray-300 pl-4 py-1 mb-2">
+                    <div className="flex flex-col md:flex-row justify-between mb-2">
+                        <span><ArrowLink href="https://uxc.khu.ac.kr/" className="font-semibold">User eXperience Computing Lab</ArrowLink> / Seoul, Republic of Korea</span>
                         <p className="text-gray-500">Sep 2024 - Present</p>
                     </div>
                     <p className="text-gray-500">Undergraduate Researcher</p>

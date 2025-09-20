@@ -23,7 +23,7 @@ export default function Activities() {
                                 Google Developer Student Club @ KHU
                             </ArrowLink>
                         </span>
-                        <p className="text-gray-500">Sep 2024 - Present</p>
+                        <p className="text-gray-500">Sep 2024 - Jun 2025</p>
                     </div>
                     <p className="text-gray-500">Frontend Member </p>
                 </li>

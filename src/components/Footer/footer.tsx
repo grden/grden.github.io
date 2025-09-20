@@ -1,4 +1,4 @@
-import { EMAIL, GITHUB, INSTAGRAM, RESUME } from "../../constants/contacts";
+import { EMAIL, GITHUB, LINKEDIN, RESUME } from "../../constants/contacts";
 
 export default function Footer() {
     return (
@@ -9,7 +9,7 @@ export default function Footer() {
                         <div className="mb-2">Reach me at <a href={`mailto:${EMAIL}`} className="hover:text-gray-800 transition-colors underline">micky4@khu.ac.kr</a> !</div>
                         <p className="cursor-pointer hover:text-gray-800 transition-colors underline inline" onClick={() => window.open(RESUME, "_blank")}>Resume</p><span className="relative bottom-[-0.1em] ml-0.5">↗</span>
                         &nbsp; | &nbsp;
-                        <p className="cursor-pointer hover:text-gray-800 transition-colors underline inline" onClick={() => window.open(INSTAGRAM, "_blank")}>Instagram</p><span className="relative bottom-[-0.1em] ml-0.5">↗</span>
+                        <p className="cursor-pointer hover:text-gray-800 transition-colors underline inline" onClick={() => window.open(LINKEDIN, "_blank")}>LinkedIn</p><span className="relative bottom-[-0.1em] ml-0.5">↗</span>
                         &nbsp; | &nbsp;
                         <p className="cursor-pointer hover:text-gray-800 transition-colors underline inline" onClick={() => window.open(GITHUB, "_blank")}>GitHub</p><span className="relative bottom-[-0.1em] ml-0.5">↗</span>
                     </p>

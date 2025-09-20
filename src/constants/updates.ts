@@ -9,16 +9,16 @@ export type UpdateType = {
 
 export const UPDATES: UpdateType[] = [
     {
+        title: "Started as an Intern at KETI(Korea Electronics Technology Institute).",
+        date: "Sep 2025",
+        link: "https://www.keti.re.kr/eng/main/main.php",
+        category: "work"
+    },
+    {
         title: "Research paper on HCI got accepted to KCC 2025.",
         date: "Jun 2025",
         link: "/publications",
         category: "paper"
-    },
-    {
-        title: "Launched official website for Ludens, KHU's game development club.",
-        date: "Feb 2025",
-        link: "/projects/ludens",
-        category: "project"
     },
     {
         title: "Started as a Software Engineer Intern at M5ers.",
