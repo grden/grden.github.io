@@ -7,6 +7,7 @@ interface ArrowLinkProps {
 export default function ArrowLink({ href, children, className = "" }: ArrowLinkProps) {
     const baseClassName = "text-black font-medium underline decoration-gray-400 hover:decoration-inherit transition-colors duration-200";
     const finalClassName = className ? `${baseClassName} ${className}` : baseClassName;
+    const textColor = className?.match(/text-([a-zA-Z0-9-]+)/)?.[1] || 'black';
 
     return (
         <>
@@ -18,7 +19,7 @@ export default function ArrowLink({ href, children, className = "" }: ArrowLinkP
             >
                 {children}
             </a>
-            <span className="relative bottom-[-0.1em] ml-0.5 text-black">↗</span>
+            <span className={`relative bottom-[-0.1em] ml-0.5 text-${textColor}`}>↗</span>
         </>
     );
 } 
