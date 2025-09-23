@@ -9,7 +9,7 @@ export default function Others() {
             <div className="border-l-3 border-gray-300 pl-4 py-1 mb-2">
                 <h3 className="font-medium mb-2">Open Source Contribution</h3>
                 <ul>
-                    <li className="text-gray-500 mb-1"><ArrowLink href="https://github.com/pyodide" className="font-normal text-gray-500">Pyodide</ArrowLink>
+                    <li className="text-gray-500 mb-1"><ArrowLink href="https://github.com/pyodide" className="font-normal hover:text-gray-800">Pyodide</ArrowLink>
                         , a Python distribution for the browser and Node.js based on WebAssembly.</li>
                 </ul>
             </div>
@@ -19,7 +19,7 @@ export default function Others() {
                 <h3 className="font-medium mb-2">Localization</h3>
                 <ul>
                     <li className="text-gray-500 mb-1">
-                        <ArrowLink href="https://crowdin.com/project/iina" className="font-normal text-gray-500">IINA</ArrowLink>, English - Korean localization(6th top contributor).
+                        <ArrowLink href="https://crowdin.com/project/iina" className="font-normal hover:text-gray-800">IINA</ArrowLink>, English - Korean localization(6th top contributor).
                     </li>
                 </ul>
             </div>
