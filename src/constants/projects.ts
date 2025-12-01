@@ -1,6 +1,6 @@
-export type CategoryType = 'All' | 'Internship' | 'Personal Project'
+export type CategoryType = 'All' | 'Internship' | 'Personal Project' | 'Industry Project'
 
-export const CATEGORY_LIST: CategoryType[] = ['All', 'Internship', 'Personal Project']
+export const CATEGORY_LIST: CategoryType[] = ['All', 'Internship', 'Personal Project', 'Industry Project']
 
 export const ALL_CATEGORY = 'All';
 
@@ -15,6 +15,15 @@ export type ProjectType = {
 }
 
 export const PROJECTS: ProjectType[] = [
+    {
+        slug: 'riido',
+        title: 'Riido',
+        date: 'Autumn 2025',
+        summary: 'Redesigned user experience of an AI project management tool.',
+        thumbnail: '/projects/riido/riido-thumbnail.png',
+        tags: ["User Research", "UX Design", "A/B Test", "Figma", "React"],
+        category: 'Industry Project'
+    },
     {
         slug: 'youtube-chips',
         title: 'YouTube Chips',
@@ -38,7 +47,7 @@ export const PROJECTS: ProjectType[] = [
         title: 'Ludens',
         date: 'Winter 2025',
         summary: 'Promotional website for Ludens, a student game development club at Kyung Hee University.',
-        thumbnail: '/projects/ludens-thumbnail.jpg',
+        thumbnail: '/projects/ludens/ludens-thumbnail.jpg',
         tags: ["Next.js", "TypeScript", "Framer-motion", "GitHub", "Vercel", "Google Analytics"],
         category: 'Personal Project'
     },

@@ -1,0 +1,230 @@
+---
+title: "Riido"
+date: "Sep 2025 - Nov 2025"
+role: "Project Manager"
+thumbnail: "/projects/riido/riido-thumbnail.png"
+---
+
+import ToolTag from '@/components/ToolTags/toolTag';
+import ArrowLink from '@/components/ArrowLink/arrowLink';
+import HorizontalTextImage from '@/features/Projects/components/horizontalTextImage';
+
+Leading a five-person team as PM, I redesigned the user flow of <ArrowLink href="https://www.riido.io/" className="font-normal">Riido</ArrowLink>, SWYG's AI project management tool, to improve its usability.
+
+<br/>
+
+## Problem
+
+While Riido started as a tool to alleviate project management burdens, current feedback indicates that the platform suffers from complicated user flows and low UX consistency.
+  
+Our initial analysis identified the AI project schedule creation process as the primary bottleneck, where excessive complication prevents users from intuitively achieving their goals.
+
+<br/>
+
+## User Research
+
+To further investigate and confirm the problem, we conducted **Usability Tests with 10 different users**.
+
+Participants were assigned role-based scenarios and asked to complete four tasks.
+<img 
+  src="/projects/riido/riido-ut.jpg" 
+  alt="Usability Tests" 
+  className="mx-auto object-cover rounded-lg w-full my-4" 
+/>
+
+<br/>
+
+## Synthesizing Research
+
+We used Affinity Mapping to collaboratively organize the info we received from user interviews and meaningfully analyze common themes in order to uncover key insights.
+<img 
+  src="/projects/riido/riido-am.png" 
+  alt="Affinity Mapping" 
+  className="mx-auto object-cover rounded-lg w-full my-4" 
+/>
+
+<br/>
+
+**Key Takeaways**
+<section className="grid grid-cols-2 w-full mx-auto gap-4 md:gap-16">
+    <div>
+        👩‍💻 Participants familiar with AI-based tools prioritized control.  
+        <p className="text-gray-500">They requested structured input flows, the ability to manually adjust results, and transparency regarding the logic behind the AI's output.</p>
+    </div>
+    <div>
+        🧑‍🎓 Participants less familiar with AI tools emphasized clarity.  
+        <p className="text-gray-500">They struggled with low UI visibility and a lack of immediate feedback regarding system status or errors.</p>
+    </div>
+</section>
+<p className="text-gray-500">All participants struggled to intuitively identify the platform's primary purpose and role upon first use.</p>
+<br/>
+
+<br/>
+
+## Design Goals
+
+The research also helped us define 3 focus areas for the redesign.
+<section className="grid grid-cols-3 w-full mx-auto gap-2 md:gap-6">
+    <div>
+        <div className="text-6xl bg-[#262f38] rounded-md w-full h-28 flex items-center justify-center">👀</div>
+        <p>**Visibility**</p>
+        <p className="text-gray-500">Clarify system status and information structure</p>
+    </div>
+    <div>
+    <div className="text-6xl bg-[#262f38] rounded-md w-full h-28 flex items-center justify-center">⚙️</div>
+        <p>**Agency**</p>
+        <p className="text-gray-500 wrap-anywhere">Ensure user agency over the AI generation process and its outcomes</p>
+    </div>
+    <div>
+        <div className="text-6xl bg-[#262f38] rounded-md w-full h-28 flex items-center justify-center">💡</div>
+        <p>**Usability**</p>
+        <p className="text-gray-500 wrap-break-word">Minimize cognitive load to allow for intuitive and effortless task completion.</p>
+    </div>
+</section>
+
+<br/>
+
+## Solution
+**User Flow**
+
+For an intuitive user journey, we defined a new User Flow.
+
+<img 
+  src="/projects/riido/riido-userflow.png" 
+  alt="User Flow" 
+  className="mx-auto rounded-lg w-full my-4 border border-gray-300" 
+/>
+
+<br/>
+
+**Final Prototype**
+
+I built a high-fidelity prototype using React to conduct A/B tests.
+
+<br/>
+<section className="flex flex-col mx-auto gap-12">
+    <HorizontalTextImage textContent={
+        <>
+            <div className="text-gray-500 text-sm mb-1">Design Goal: Visibility</div>
+            <div className="mb-4"><strong>Clarifying Riido AI's Purpose</strong></div>
+            <div className="text-gray-500 text-sm mb-2"><strong>AS-IS</strong><br/>Users struggled to grasp the tool's core functions and purpose, frequently overlooking the preview images intended to aid understanding.</div>
+            <div className="text-gray-500 text-sm"><strong>TO-BE</strong><br/>Implemented an onboarding flow and help guides to clearly communicate the platform's purpose and features.</div>
+        </>
+    }
+    image="/projects/riido/riido-sol1.gif"
+    />
+
+    <HorizontalTextImage textContent={
+        <>
+            <div className="text-gray-500 text-sm mb-1">Design Goal: Visibility, Usability</div>
+            <div className="mb-4"><strong>Enhancing Visibility & Guidance for Additional Inputs</strong></div>
+            <div className="text-gray-500 text-sm mb-2"><strong>AS-IS</strong><br/>Users frequently overlooked the input section. Even when found, the lack of clear instructions made it difficult to understand what to enter.</div>
+            <div className="text-gray-500 text-sm"><strong>TO-BE</strong><br/>Isolated the input process into a dedicated step with segmented fields. Added specific placeholders to provide clear guidance.</div>
+        </>
+    }
+    image="/projects/riido/riido-sol2.gif"
+    rightText={true}
+    />
+
+    <HorizontalTextImage textContent={
+        <>
+            <div className="text-gray-500 text-sm mb-1">Design Goal: Visibility, Agency</div>
+            <div className="mb-4"><strong>Enhancing Flexibility for Participant Input</strong></div>
+            <div className="text-gray-500 text-sm mb-2"><strong>AS-IS</strong><br/>Default participant fields often mismatched actual needs, and users frequently failed to recognize they could edit them.</div>
+            <div className="text-gray-500 text-sm"><strong>TO-BE</strong><br/>Allowed users to add or remove roles dynamically. Used placeholders and empty states to clearly indicate that fields are editable.</div>
+        </>
+    }
+    image="/projects/riido/riido-sol3.png"
+    />
+
+    <HorizontalTextImage textContent={
+        <>
+            <div className="text-gray-500 text-sm mb-1">Design Goal: Visibility</div>
+            <div className="mb-4"><strong>Providing Clear System Feedback</strong></div>
+            <div className="text-gray-500 text-sm mb-2"><strong>AS-IS</strong><br/>The lack of progress feedback caused user drop-off during wait times, while opaque logic left users questioning the generation process.</div>
+            <div className="text-gray-500 text-sm"><strong>TO-BE</strong><br/>Replaced skeletons with clear loading indicators and displayed step-by-step progress to explain the generation logic in real-time.</div>
+        </>
+    }
+    image="/projects/riido/riido-sol4.png"
+    rightText={true}
+    />
+
+    <HorizontalTextImage textContent={
+        <>
+            <div className="text-gray-500 text-sm mb-1">Design Goal: Visibility, Agency</div>
+            <div className="mb-4"><strong>Optimizing Result Reviewing & Editing</strong></div>
+            <div className="text-gray-500 text-sm mb-2"><strong>AS-IS</strong><br/>The 'Regenerate' button was inconspicuous, and users lacked the ability to make detailed or partial adjustments to the schedule.</div>
+            <div className="text-gray-500 text-sm"><strong>TO-BE</strong><br/>Enhanced button visibility and introduced partial editing features, allowing users to selectively modify specific schedule items.</div>
+        </>
+    }
+    image="/projects/riido/riido-sol5.png"
+    />
+
+</section>
+<br/>
+
+## A/B Test
+To validate our solution, we conducted A/B Tests with 10 participants.  
+  
+We formulated hypotheses and key metrics aligned with our established design goals.
+<section className="grid grid-cols-3 w-full mx-auto gap-2 md:gap-6">
+    <div className="text-center">
+        <div className="text-lg md:text-xl text-white bg-[#262f38] rounded-md w-full h-28 flex items-center justify-center">H1. Visibility</div>
+        <p>Recognition of state and transparency will improve.</p>
+        <p className="text-gray-500">Visibility & AI Transparency Survey<br/>(2 items, 5-point Likert scale)</p>
+    </div>
+    <div className="text-center">
+        <div className="text-lg md:text-xl text-white bg-[#262f38] rounded-md w-full h-28 flex items-center justify-center">H2. Agency</div>
+            <p>Sense of user control will improve.</p>
+            <p className="text-gray-500 wrap-anywhere">Perceived Control Survey<br/>(1 item, 5-point Likert scale)</p>
+        </div>
+    <div className="text-center">
+        <div className="text-lg md:text-xl text-white bg-[#262f38] rounded-md w-full h-28 flex items-center justify-center">H3. Usability</div>
+        <p>Overall usability will improve.</p>
+        <p className="text-gray-500 wrap-break-word">SUS, NPS</p>
+    </div>
+</section>
+
+<br/>
+
+**Result**
+
+The A/B test results successfully validated our hypotheses as follows:
+
+<img 
+  src="/projects/riido/riido-ab.png" 
+  alt="Usability Tests" 
+  className="mx-auto object-cover h-72 rounded-lg w-full my-4" 
+/>
+
+The average SUS score rose from 54.3 to 77.8(43% increase!), proving a significant improvement in overall usability.
+<br/>
+
+<section className="flex flex-col w-full mx-auto gap-6">
+    <div className="bg-gray-200 rounded-t-2xl rounded-br-2xl max-w-4/5 md:max-w-3/5 w-fit h-fit flex items-center justify-center px-8 py-2">
+        "The overall interface and the flow - from input to generation to editing - felt natural and seamless." (P3)
+    </div>
+    <div className="ml-auto right-0 bg-gray-200 rounded-t-2xl rounded-bl-2xl max-w-4/5 md:max-w-3/5 w-fit h-fit flex items-center justify-center px-8 py-2">
+        "I never felt stuck or encountered any friction throughout the process." (P8)
+    </div>
+</section>
+
+<br/>
+
+## Conclusion
+The work was presented to a cohort of 10 SWYG executives, including the CEO, and received positive recognition.
+<div className="flex flex-row mx-auto justify-center gap-2 md:gap-4">
+    <img 
+    src="/projects/riido/riido-presentation.jpg" 
+    alt="Presentation" 
+    className="rounded-lg w-1/3 md:max-w-1/4 h-64 object-cover my-4" 
+    />
+    <img 
+    src="/projects/riido/riido-result.jpg" 
+    alt="Result" 
+    className="rounded-lg w-2/3 md:max-w-1/2 h-64 object-cover my-4 " 
+    />
+</div>
+
+## Tools Used
+<ToolTag tags={["Figma", "React"]}/>
