@@ -12,7 +12,7 @@ export default function Header() {
                         <span className="hidden sm:inline">JEONGWON KIM</span>
                         <span className="sm:hidden">JW</span>
                     </Link>
-                    <div className="flex items-center gap-8">
+                    <div className="flex items-center gap-4 md:gap-8">
                         {headerItemList.map((item) => (
                             <Link
                                 key={item.label}
