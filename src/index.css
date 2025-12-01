@@ -1,4 +1,16 @@
 @font-face {
+  font-family: 'Pretendard';
+  src: url('src/assets/fonts/Pretendard-ExtraLight.woff2');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('src/assets/fonts/Pretendard-Light.woff2');
+  font-weight: 300;
+}
+
+@font-face {
     font-family: 'Pretendard';
     src: url('src/assets/fonts/Pretendard-Regular.woff2');
     font-weight: 400;
@@ -54,6 +66,7 @@ html {
   }
   
   .prose p {
+    /* font-weight: 300; */
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
   }
