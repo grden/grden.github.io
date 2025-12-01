@@ -14,7 +14,7 @@ export default function Footer() {
                         <p className="cursor-pointer hover:text-gray-800 transition-colors underline inline" onClick={() => window.open(GITHUB, "_blank")}>GitHub</p><span className="relative bottom-[-0.1em] ml-0.5">↗</span>
                     </p>
                     <div className="flex flex-col md:flex-row gap-2">
-                        <span className="text-sm text-gray-500">ⓒ 2025. Jeongwon Kim. All rights reserved.</span>
+                        <span className="text-sm text-gray-500">Made with ❤️ by Jeongwon Kim</span>
                     </div>
                 </div>
             </div>
