@@ -2,7 +2,7 @@
 title: "Ludens"
 date: "Feb 2025 - Present"
 role: "Lead Developer"
-thumbnail: "/projects/ludens-thumbnail.jpg"
+thumbnail: "/projects/ludens/ludens-thumbnail.jpg"
 ---
 
 import ToolTag from '@/components/ToolTags/toolTag';
@@ -10,12 +10,16 @@ import ArrowLink from '@/components/ArrowLink/arrowLink';
 
 I built a promotional website for Ludens, a student game development club at Kyung Hee University.
 
-You can check out the <ArrowLink href="https://khuludens.com" className="font-normal">Ludens web page</ArrowLink>.
+You can check out the <ArrowLink href="https://khuludens.com" className="font-normal">Ludens web page here</ArrowLink>.
+
+<br/>
 
 ## Background
 
-Despite having over 60 members, the club lacked an official introduction or recruitment site. 
+Despite having over 100 members, the club lacked an official introduction or recruitment site. 
 At the request of the club president, I led a project to design and develop the website to better represent the club and attract new members.
+
+<br/>
 
 ## What I Did
 
@@ -24,34 +28,64 @@ At the request of the club president, I led a project to design and develop the 
 - Used Framer-motion to implement staggered content loading animations and created an RGB glitch effect for the logo to reflect the club’s identity.
 - Implemented SEO by configuring meta tags, Open Graph, and sitemap to improve the site's discoverability.
 
+<br/>
+
 ## What I Built
 
 **About Page**
 <img 
-  src="/projects/ludens-about.png" 
+  src="/projects/ludens/ludens-about.png" 
   alt="About Page" 
   className="mx-auto rounded-lg w-full my-4" 
 />
 **Projects Page**
 <img 
-  src="/projects/ludens-projects.png" 
+  src="/projects/ludens/ludens-projects.png" 
   alt="Projects Page" 
   className="mx-auto rounded-lg w-full my-4" 
 />
 
-## Performance optimization
-Using Google Analytics, I identified slow load times on high-traffic, high-bounce-rate pages.
-I tried to optimize performance on such pages by restructuring data structure and optimizing images, reducing LCP by up to 1.5s.
+<br/>
 
-<img 
-  src="/projects/ludens-po-1.png" 
-  alt="Performance Optimization" 
-  className="mx-auto rounded-lg w-full my-4" 
-/>
+## From Data to Performance Optimization
+Using Google Analytics, I noticed a high bounce-rate on projects page. Hypothesizing that the slow load time was the cause,
+I measured performance score using Lighthouse and found the LCP is 2.7s.
+
+Too address this, I tried optimizing the page by:
+
+**1. Optimizing the image.**
+<p className="text-gray-500">Accelerated LCP by enforcing `priority` on hero images, implementing responsive sizing, and optimizing quality settings.</p>
+
+**2. Migrating to a Efficient Data Architecture.**
+<p className="text-gray-500">Transitioned from a bulk-data fetching structure to an MDX-based architecture, significantly reducing payload size by fetching specific project data instead of the entire list.</p>
+
+**3. Code Refactoring**
+<p className="text-gray-500">Resolved duplicate `onClick` event triggers to eliminate unnecessary re-renders.</p>
+
+<br/>
+
+<div className="flex flex-row mx-auto justify-center gap-2 md:gap-4 my-4">
+  <img 
+    src="/projects/ludens/ludens-po-before.png" 
+    alt="Performance Optimization" 
+    className="mx-auto max-w-1/2 object-cover rounded-lg border border-gray-300" 
+  />
+  <img 
+    src="/projects/ludens/ludens-po-3.png" 
+    alt="Performance Optimization" 
+    className="mx-auto max-w-1/2 object-cover rounded-lg border border-gray-300" 
+  />
+</div>
+<p className="text-center text-gray-500">Before and After</p>
+
+These actions reduced LCP by 23%.
+Consequently, the bounce rate dropped by 22%, and the average engagement rate rose by 15% (compared over a three-month period pre and post update).
+
+<br/>
 
 ## Result
 Thanks to implemented UX and search engine visibility, 
-the site attracted a steady flow of visitors and played a key role in helping the club grow its membership by approximately 147% compared to the previous semester.
+the site attracted a steady flow of visitors and played a key role in **helping the club grow its membership by approximately 147%** compared to the previous semester.
 
 ## Tools Used
 <ToolTag tags={["Next.js", "TypeScript", "Framer-motion", "GitHub", "Vercel", "Google Analytics"]}/>
