@@ -21,16 +21,25 @@ export const PROJECTS: ProjectType[] = [
         date: 'Autumn 2025',
         summary: 'Redesigned user experience of an AI project management tool.',
         thumbnail: '/projects/riido/riido-thumbnail.png',
-        tags: ["User Research", "UX Design", "A/B Test", "Figma", "React"],
+        tags: ["User Research", "UX Design", "A/B Test", "Prototyping", "Frontend Engineering"],
         category: 'Industry Project'
     },
+    // {
+    //     slug: 'parmful',
+    //     title: 'Parmful',
+    //     date: 'Summer 2025',
+    //     summary: 'Redesigned user experience of an AI project management tool.',
+    //     thumbnail: '/projects/parmful/parmful-thumbnail-1.png',
+    //     tags: ["User Research", "UX Design", "A/B Test", "Figma", "React"],
+    //     category: 'Personal Project'
+    // },
     {
         slug: 'youtube-chips',
         title: 'YouTube Chips',
         date: 'Spring 2025',
-        summary: 'Chrome extension that allows users to easily add chips to their videos.',
-        thumbnail: '/projects/yc-thumbnail.jpg',
-        tags: ["React", "TypeScript", "FastAPI", "AWS", "Firebase"],
+        summary: 'A Chrome extension that mitigates distractions by filtering YouTube feeds based on user intent.',
+        thumbnail: '/projects/yc/yc-thumbnail.jpg',
+        tags: ["UX Design", "Full Stack Engineering", "Data Analysis"],
         category: 'Personal Project'
     },
     {
@@ -39,7 +48,7 @@ export const PROJECTS: ProjectType[] = [
         date: 'Spring 2025',
         summary: 'Web service to predict load bottlenecks using AI, perform stress testing, and visualize the results.',
         thumbnail: '/projects/ezstress-thumbnail-2.jpg',
-        tags: ["React", "TypeScript", "AWS", "Figma"],
+        tags: ["Product Design", "Prototyping","Frontend Engineering"],
         category: 'Personal Project'
     },
     {
@@ -48,7 +57,7 @@ export const PROJECTS: ProjectType[] = [
         date: 'Winter 2025',
         summary: 'Promotional website for Ludens, a student game development club at Kyung Hee University.',
         thumbnail: '/projects/ludens/ludens-thumbnail.jpg',
-        tags: ["Next.js", "TypeScript", "Framer-motion", "GitHub", "Vercel", "Google Analytics"],
+        tags: ["Product Design", "Interaction Design", "Frontend Engineering", "Google Analytics", "SEO"],
         category: 'Personal Project'
     },
     {
@@ -57,7 +66,7 @@ export const PROJECTS: ProjectType[] = [
         date: 'Winter 2024',
         summary: 'Built a start of the web application to test and manage ASIC-based cryptocurrency mining machines.',
         thumbnail: '/projects/m5ers-thumbnail.jpg',
-        tags: ["React", "JavaScript", "Docker", "Jira"],
+        tags: ["Product Design", "Frontend Engineering", "Technical Documentation"],
         category: 'Internship'
     },
     {
@@ -66,16 +75,16 @@ export const PROJECTS: ProjectType[] = [
         date: 'Fall 2024',
         summary: 'A real-time safety monitoring system combining hardware and software to prevent heat-related illnesses among Korean military.',
         thumbnail: '/projects/roka-thumbnail.png',
-        tags: ["Flutter", "Firebase", "Arduino", "Scikit-learn", "FastAPI"],
+        tags: ["Product Design", "Mobile Engineering", "Backend Engineering", "Machine Learning"],
         category: 'Personal Project'
     },
-    {
-        slug: 'tutor',
-        title: 'Indeed',
-        date: 'Spring 2024',
-        summary: 'Tutor matching mobile application.',
-        thumbnail: '/projects/tutor.png',
-        tags: ["Figma", "Flutter", "Firebase", "gRPC", "MongoDB"],
-        category: 'Personal Project'
-    }
+    // {
+    //     slug: 'tutor',
+    //     title: 'Indeed',
+    //     date: 'Spring 2024',
+    //     summary: 'Tutor matching mobile application.',
+    //     thumbnail: '/projects/tutor.png',
+    //     tags: ["Figma", "Flutter", "Firebase", "gRPC", "MongoDB"],
+    //     category: 'Personal Project'
+    // }
 ]
