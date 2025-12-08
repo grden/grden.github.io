@@ -2,68 +2,192 @@
 title: "YouTube Chips"
 date: "Apr 2025 - Present"
 role: "Lead Developer"
-thumbnail: "/projects/yc-thumbnail-2.jpg"
+thumbnail: "/projects/yc/yc-thumbnail-2.jpg"
 ---
 
 import ToolTag from '@/components/ToolTags/toolTag';
 import ReactPlayer from 'react-player';
 import ArrowLink from '@/components/ArrowLink/arrowLink';
 
-I built a promotional website for Ludens, a student game development club at Kyung Hee University.
+To address the issue of YouTube's recommendation system diverting users from their initial goals, I developed a Chrome extension that filters video feeds according to user selected categories.
+I also conducted a quantitative analysis of user logs to not only evaluate the extension's effectiveness, but also derive design implications for YoutTube's recommendation system.
 
 You can check out <ArrowLink href="https://chromewebstore.google.com/detail/dmgbijacfoechdplahccjjhjkhhldpcd?utm_source=item-share-cb" className="font-normal">YouTube Chips on the Chrome Web Store</ArrowLink>.
+
+<br/>
 
 ## Background
 
 I was frustrated with how easily I'd get distracted. I'd go to YouTube to find a lecture or tutorial, and end up watching game videos or random comedy skits for an hour.
 While YouTube's category chips offer some filtering, they don't persist across sessions, lack customization, and often miss the category I need.
 
+<br/>
+
+## Solution
+
+To address this, I developed a Chrome extension that filters video feeds according to user selected categories.
+
+I did:
+- Design and development of a Chrome extension using React and TypeScript.
+- Implementation of a FastAPI server on AWS EC2 to identify the most semantically similar category, using OpenAPI's embedding model.
+
+<br/>
+
 ## Features
 
 YouTube Chips allows users to save preferred categories, auto-apply them on each visit, and intelligently match to the closest category.
 <br/>
 
-**Set Preferred Category**
+<div className="flex flex-col md:flex-row mx-auto gap-6">
+  <div className="w-full md:w-3/5">
+    <ReactPlayer 
+      src="/projects/yc/yc-feat-1.mp4"
+      className="rounded-lg border border-gray-300"
+      width="100%"
+      height="288px"
+      muted
+      loop
+      playing
+    />
+  </div>
+  <div className="flex flex-col w-full md:w-2/5 justify-start mt-2">
+    <div className="mb-4"><strong>Set Preferred Category</strong></div>
+    <div className="mb-3">Save your preferred categories, which are auto-applied whenever you visit YouTube.</div>
+    <div>The closest matching category is automatically selected if the exact one isn’t available, using OpenAI's embedding model.</div>
+  </div>
+</div>
 
-Save your preferred categories, which are auto-applied whenever you visit YouTube.
-The closest matching category is automatically selected if the exact one isn’t available, using OpenAI's embedding model.
+<div className="mx-auto h-12"/>
 
-<ReactPlayer 
-  src="/projects/yc-feat-1.mp4"
-  className="mx-auto rounded-lg my-4"
-  width="100%"
-  height="auto"
-  muted
-  loop
-  playing
-/>
+<div className="flex flex-col md:flex-row mx-auto gap-6">
+  <div className="hidden md:flex md:flex-col w-full md:w-2/5 justify-start mt-2">
+    <div className="mb-4"><strong>Time Based Category</strong></div>
+    <p className="break-all">Schedule different categories based on day or time (e.g. “Music” during working hours, “Game” on weekends)</p>
+  </div>
+  <div className="w-full md:w-3/5">
+    <ReactPlayer 
+      src="/projects/yc/yc-feat-2.mp4"
+      className="rounded-lg border border-gray-300"
+      width="100%"
+      height="288px"
+      muted
+      loop
+      playing
+    />
+  </div>
+    <div className="md:hidden flex flex-col w-full md:w-2/5 justify-start mt-2">
+    <div className="mb-4"><strong>Time Based Category</strong></div>
+    <p className="break-all">Schedule different categories based on day or time (e.g. “Music” during working hours, “Game” on weekends)</p>
+  </div>
+</div>
 
 <br/>
-**Time Based Category**
 
-Schedule different categories based on day or time (e.g. “Music” during working hours, “Game” on weekends)
+## Next Step: Data Analysis
 
-<ReactPlayer 
-  src="/projects/yc-feat-2.mp4"
-  className="mx-auto rounded-lg my-4"
-  width="100%"
-  height="auto"
-  muted
-  loop
-  playing
-/>
-
-## What I Did
-
-- Design and develop a Chrome extension using React and TypeScript.
-- Implement a FastAPI server on AWS EC2 to identify the most semantically similar category, using OpenAPI's embedding model.
-- Collect usage logs via Firebase to analyze user patterns on YouTube and evaluate the extension’s effectiveness.
+I collected 5000+ usage logs from 46 users over 24 days period via Firebase to analyze user patterns on YouTube and evaluate the extension’s effectiveness.
 
 <img 
-  src="/projects/yc-data.png" 
+  src="/projects/yc/yc-data.png" 
   alt="usage data analysis" 
-  className="mx-auto rounded-lg w-full my-4 border border-gray-300" 
+  className="mx-auto rounded-lg h-72 my-4 border border-gray-300" 
 />
+<p className="text-center text-gray-500">Usage logs</p>
+
+<br/>
+
+Based on this, I tried to investigate the following research questions.
+
+**RQ1. Can we predict a user's intent of visiting YouTube (Utilitarian vs. Hedonic) based on temporal context?**  
+**RQ2. Will filtering the recommendation system based on the user's intent of visiting YouTube improve engagement?**
+
+<br/>
+
+## Approaching the Research Questions
+
+<div className="flex flex-col w-full mx-auto border border-gray-300 rounded-lg gap-2 p-4 bg-[#f9fafb]">
+    <p className="text-center"><strong>RQ1. Can we predict a user's intent of visiting YouTube (Utilitarian vs. Hedonic) based on temporal context?</strong></p>
+    <div className="flex flex-col md:flex-row gap-4">
+      <div className="flex-1 shadow-xs rounded-2xl p-4 bg-white">
+        <div className="bg-[#F2F2F2] rounded-md text-sm font-semibold px-3 py-1.5 w-fit">Method</div>
+        <ol className="break-all">
+          <li>Defined user intent by clustering interaction logs (video titles & search keywords) into "Utilitarian" or "Hedonic" groups using K-Means.</li>
+          <li>Trained Scikit-learn's classifier model to predict these 2 clusters based on time and day variables.</li>
+        </ol>
+      </div>
+      <div className="hidden md:flex m-auto justify-center items-center text-gray-500">--></div>
+      <div className="flex md:hidden m-auto justify-center items-center text-gray-500">↓</div>
+      <div className="flex-1 shadow-xs rounded-2xl p-4 bg-white">
+        <div className="bg-[#F2F2F2] rounded-md text-sm font-semibold px-3 py-1.5 w-fit">Result</div>
+        <p className="pl-1.5 break-all">Achieved 71% accuracy in predicting user intent.</p>
+        <img src="/projects/yc/yc-result-1.png" alt="result" className="mx-auto rounded-lg h-24 border border-gray-300" />
+        <h6 className="pl-1.5 break-all mt-4">This means that user's purpose of visit correlates with outer context, which validates the feasibility of context-aware recommendation.</h6>
+      </div>
+    </div>
+</div>
+
+<br/>
+
+<div className="flex flex-col w-full mx-auto border border-gray-300 rounded-lg gap-2 p-4 bg-[#f9fafb]">
+    <p className="text-center"><strong>RQ2. Will filtering the recommendation system based on the user's intent of visiting YouTube improve engagement?</strong></p>
+    <div className="flex flex-col md:flex-row gap-4">
+      <div className="flex-1 shadow-xs rounded-2xl p-4 bg-white">
+        <div className="bg-[#F2F2F2] rounded-md text-sm font-semibold px-3 py-1.5 w-fit">Method</div>
+        <ol className="break-all m-auto">
+          <li>Classified user-selected filter categories into "Utilitarian" and "Hedonic" groups.</li>
+          <li>Conducted an independent t-test comparing session durations between two groups.</li>
+        </ol>
+      </div>
+      <div className="hidden md:flex m-auto justify-center items-center text-gray-500">--></div>
+      <div className="flex md:hidden m-auto justify-center items-center text-gray-500">↓</div>
+      <div className="flex-1 shadow-xs rounded-2xl p-4 bg-white">
+        <div className="bg-[#F2F2F2] rounded-md text-sm font-semibold px-3 py-1.5 w-fit">Result</div>
+        <p className="pl-1.5 break-all">Sessions driven by utilitarian purpose showed significantly longer duration compared to hedonic purpose(p < 0.05).</p>
+        <img src="/projects/yc/yc-result-2.png" alt="result" className="mx-auto rounded-lg h-40 border border-gray-300" />
+        <h6 className="pl-1.5 break-all mt-4">This indicates deeper engagement when recommendations align with user goals.</h6>
+      </div>
+    </div>
+</div>
+
+<br/>
+
+## Discussion
+**1. Effectiveness of the Extension**
+
+YouTube Chips successfully extended session durations by aligning content with users' practical goals.
+This validates that relevance drives sustained engagement.
+
+<div className="mx-auto h-2"/>
+
+**2. Design Implications for YouTube's Recommendation System**
+
+Based on the results, I proposed two design goals for YouTube's recommendation system.
+
+<section className="grid grid-cols-2 w-full mx-auto gap-4 md:gap-16">
+    <div>
+        **"Quality of Time" over "Time Spent"**
+        <p className="text-gray-500">Recommendation systems should prioritize fulfilling the user's purpose of visit over retention.<br/>Deep engagement in goal-oriented sessions proves that satisfying the user's purpose is a more sustainable metric.</p>
+    </div>
+    <div>
+        **Leverage External Context**
+        <p className="text-gray-500">Recommendation systems should proactively adjust feeds based on external contexts (e.g., time, day) to reduce cognitive load and support user autonomy.</p>
+    </div>
+</section>
+
+<br/>
+
+## Conclusion
+
+The work was highly recognized by the supervising professor(and the users).
+
+<img 
+  src="/projects/yc/yc-installs.png" 
+  alt="installs" 
+  className="mx-auto rounded-lg h-72 my-4 border border-gray-300" 
+/>
+<p className="text-center text-gray-500">Installations for the past 30 days (Dec 2025).</p>
+
+<br/>
 
 ## Tools Used
-<ToolTag tags={["React", "TypeScript", "FastAPI", "AWS", "Firebase"]}/>
+<ToolTag tags={["React", "FastAPI", "AWS", "Firebase", "Scikit-learn", "Pandas"]}/>
