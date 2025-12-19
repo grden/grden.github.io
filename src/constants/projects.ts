@@ -34,11 +34,11 @@ export const PROJECTS: ProjectType[] = [
     //     category: 'Personal Project'
     // },
     {
-        slug: 'youtube-chips',
-        title: 'YouTube Chips',
+        slug: 'filca',
+        title: 'Filca',
         date: 'Spring 2025',
         summary: 'A Chrome extension that mitigates distractions by filtering YouTube feeds based on user intent.',
-        thumbnail: '/projects/yc/yc-thumbnail.jpg',
+        thumbnail: '/projects/yc/yc-thumbnail-1.jpg',
         tags: ["UX Design", "Full Stack Engineering", "Data Analysis"],
         category: 'Personal Project'
     },
