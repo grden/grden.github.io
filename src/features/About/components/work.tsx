@@ -7,13 +7,6 @@ export default function Work() {
             <ul>
                 <li className="border-l-3 border-gray-300 pl-4 py-1 mb-2">
                     <div className="flex flex-col md:flex-row justify-between mb-2">
-                        <span><ArrowLink href="https://www.keti.re.kr/main/main.php" className="font-semibold">KETI(Korea Electronics Technology Institute)</ArrowLink> / Seoul, Republic of Korea</span>
-                        <p className="text-gray-500">Sep 2025 - Present</p>
-                    </div>
-                    <p className="text-gray-500">Intern</p>
-                </li>
-                <li className="border-l-3 border-gray-300 pl-4 py-1 mb-2">
-                    <div className="flex flex-col md:flex-row justify-between mb-2">
                         <span><ArrowLink href="https://uxc.khu.ac.kr/" className="font-semibold">User eXperience Computing Lab</ArrowLink> / Seoul, Republic of Korea</span>
                         <p className="text-gray-500">Sep 2024 - Present</p>
                     </div>
@@ -21,17 +14,17 @@ export default function Work() {
                 </li>
                 <li className="border-l-3 border-gray-300 pl-4 py-1 mb-2">
                     <div className="flex flex-col md:flex-row justify-between mb-2">
-                        <p><span className="font-semibold">Kyung Hee University</span> / Seoul, Republic of Korea</p>
-                        <p className="text-gray-500">Mar 2025 - Jun 2025</p>
+                        <span><ArrowLink href="https://www.keti.re.kr/main/main.php" className="font-semibold">KETI(Korea Electronics Technology Institute)</ArrowLink> / Seoul, Republic of Korea</span>
+                        <p className="text-gray-500">Sep 2025 - Dec 2025</p>
                     </div>
-                    <p className="text-gray-500">Teaching Assistant</p>
+                    <p className="text-gray-500">Research Intern</p>
                 </li>
                 <li className="border-l-3 border-gray-300 pl-4 py-1">
                     <div className="flex flex-col md:flex-row justify-between mb-2">
                         <p><span className="font-semibold">M5ers</span> / California, United States</p>
                         <p className="text-gray-500">Nov 2024 - Feb 2025</p>
                     </div>
-                    <p className="text-gray-500">Software Engineer Intern</p>
+                    <p className="text-gray-500">Intern</p>
                 </li>
             </ul>
         </div>
