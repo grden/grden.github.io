@@ -24,15 +24,15 @@ export const PROJECTS: ProjectType[] = [
         tags: ["User Research", "UX Design", "A/B Test", "Prototyping", "Frontend Engineering"],
         category: 'Industry Project'
     },
-    // {
-    //     slug: 'parmful',
-    //     title: 'Parmful',
-    //     date: 'Summer 2025',
-    //     summary: 'Redesigned user experience of an AI project management tool.',
-    //     thumbnail: '/projects/parmful/parmful-thumbnail-1.png',
-    //     tags: ["User Research", "UX Design", "A/B Test", "Figma", "React"],
-    //     category: 'Personal Project'
-    // },
+    {
+        slug: 'palmful',
+        title: 'Palmful',
+        date: 'Summer 2025',
+        summary: 'AI-based bouquet design and archiving web app.',
+        thumbnail: '/projects/palmful/palmful-thumbnail-1.png',
+        tags: ["User Research", "UX Design", "Interaction Design", "Frontend Engineering"],
+        category: 'Personal Project'
+    },
     {
         slug: 'filca',
         title: 'Filca',

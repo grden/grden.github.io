@@ -1,0 +1,205 @@
+---
+title: "Palmful"
+date: "May 2025 - Oct 2025"
+role: "Product Manager, Frontend Developer"
+thumbnail: "/projects/palmful/palmful-banner.png"
+---
+
+import ToolTag from '@/components/ToolTags/toolTag';
+import ArrowLink from '@/components/ArrowLink/arrowLink';
+import FlowerCardsList from '@/features/Projects/components/flowerCards';
+import HorizontalTextImage from '@/features/Projects/components/horizontalTextImage';
+import ReactPlayer from 'react-player';
+
+As a team of 6, we built Palmful, an AI-based bouquet design and archiving web service to address the limitations of uniformity and ephemerality in flower gifting.
+
+You can see the full source code of the project at <ArrowLink href="https://github.com/ganadiiiii" className="font-normal">GitHub</ArrowLink>.
+
+<br/>
+
+## Problem Definition
+Through desk research and a user survey involving 100 participants, 
+we identified the key pain points in the flower gifting experience.
+
+**User Survey Results**
+
+<section className="flex flex-col w-full gap-4">
+    <div className="flex flex-col md:flex-row items-center justify-center">
+        <div className="flex-1">
+            <img src="/projects/palmful/palmful-surv-res-0.png" alt="Survey 0" className="rounded-lg border border-gray-300 w-full"/>
+        </div>
+        <div className="hidden md:flex w-12 border-[#FF9BAF] border-t-4 border-dashed flex-shrink-0"/>
+        <div className="flex md:hidden h-4 border-[#FF9BAF] border-r-4 border-dashed flex-shrink-0"/>
+        <div className="flex-1 justify-center items-center text-center w-fit h-fit rounded-lg p-6 shadow-md">
+            <p>65% of respondents stated that reflecting 'emotions, contexts, and the recipient's style' is important.<br/>
+            This indicates a need for **personalization** beyond pre-made floral arrangements.</p>
+       </div>
+    </div>
+    <div className="flex flex-col md:flex-row items-center justify-center">
+        <div className="flex-1">
+            <img src="/projects/palmful/palmful-surv-res-1.png" alt="Survey 0" className="rounded-lg border border-gray-300 w-full"/>
+       </div>
+       <div className="hidden md:flex w-12 border-[#FF9BAF] border-t-4 border-dashed flex-shrink-0"/>
+       <div className="flex md:hidden h-4 border-[#FF9BAF] border-r-4 border-dashed flex-shrink-0"/>
+       <div className="flex-1 justify-center items-center text-center w-fit h-fit rounded-lg p-6 shadow-md">While the desire for personalization is high, only about 50% have attempted custom orders via florists. Even then, users reported significant friction.</div>
+    </div>
+    <div className="flex flex-col md:flex-row items-center justify-center">
+        <div className="flex-1">
+            <img src="/projects/palmful/palmful-surv-res-2.png" alt="Survey 0" className="rounded-lg border border-gray-300 w-full"/>
+       </div>
+       <div className="hidden md:flex w-12 border-[#FF9BAF] border-t-4 border-dashed flex-shrink-0"/>
+       <div className="flex md:hidden h-4 border-[#FF9BAF] border-r-4 border-dashed flex-shrink-0"/>
+       <div className="flex-1 justify-center items-center text-center w-fit h-fit rounded-lg p-6 shadow-md">46% cited "short lifespan (ephemerality)" as the primary reason for not purchasing flowers frequently.</div>
+    </div>
+</section>
+
+<br/>
+
+**Key Takeaways**
+
+Based on the research, we defined two main problems to solve.
+
+<section className="grid grid-cols-2 w-full mx-auto gap-4 md:gap-6 mt-8">
+    <div>
+        <img src="/projects/palmful/palmful-problem-0.png" alt="Problem 1" className="rounded-md max-w-full w-64 mx-auto mb-4"/>
+        <p className="text-center">**1. Uniformity**</p>
+        <p className="text-gray-500 text-center">Users desire to convey personal stories, not just buy finished products.
+        However, existing method of ordering via florists is expensive and unpredictable.</p>
+    </div>
+    <div>
+        <img src="/projects/palmful/palmful-problem-1.png" alt="Problem 2" className="rounded-md max-w-full w-64 mx-auto mb-4"/>
+        <p className="text-center">**2. Ephemerality**</p>
+        <p className="text-gray-500 text-center">Flowers fade quickly, preventing the emotional value of the gift from transforming into a lasting memory.</p>
+    </div>
+</section>
+
+<br/>
+
+<section className="flex flex-col w-full mx-auto gap-4">
+    <div className="bg-gray-200 rounded-t-2xl rounded-br-2xl max-w-4/5 w-fit h-fit flex items-center justify-center px-8 py-2 text-[15px] italic">
+       "Consumers want to create a gift that is 'only for that person,' not just buy beautiful flowers." (Wang et al., 2023)
+    </div>
+    <div className="bg-gray-200 rounded-t-2xl rounded-br-2xl max-w-4/5 w-fit h-fit flex items-center justify-center px-8 py-2 text-[15px] italic">
+        "Consumers value the human touch and emotional storytelling behind the flowers." (Lei et al., 2024)
+    </div>
+    <div className="ml-auto right-0 bg-gray-200 rounded-t-2xl rounded-bl-2xl max-w-4/5 w-fit h-fit flex items-center justify-center px-8 py-2 text-[15px] italic">
+        "Due to their short lifespan, flowers often remain a 'momentary expression of emotion,' lacking the economic and functional value to justify the purchase." (Lei et al., 2024)
+    </div>
+</section>
+
+<br/>
+
+## Crafting the Solution
+I designed IA and User Flow.
+
+<section className="grid md:grid-cols-2 grid-cols-1 w-full mx-auto gap-4">
+    <img src="/projects/palmful/palmful-ia.png" alt="IA" className="rounded-lg border border-gray-300 w-full"/>
+    <img src="/projects/palmful/palmful-uf.png" alt="User Flow" className="rounded-lg border border-gray-300 w-full"/>
+</section>
+
+<br/>
+
+## Final Product
+
+<div className="flex flex-col w-full border bg-white border-gray-300 rounded-lg items-center justify-center py-6">
+    <p className="text-center font-semibold text-gray-500 text-lg md:text-xl">Introducing 'Palmful(한줌)',</p>
+    <img src="/projects/palmful/palmful-logo.png" alt="Logo" className="md:h-20 h-16 object-contain"/>
+    <p className="text-center font-semibold text-gray-500 text-lg md:text-xl">A web app to <span className="text-[#FF9BAF]">design, share,<br/> and archive</span> emotions and stories as bouquets.</p>
+    <div className="my-6">
+        <FlowerCardsList />
+    </div>
+    <p className="text-center">AI crafts your story into a unique bouquet.<br/>
+    Share bouquets with your loved ones and capture the emotions of the moment together.<br/>
+    Preserve your memories in your own digital flower shop.</p>
+</div>
+
+<br/>
+
+**Key Features**
+<section className="flex flex-col w-full gap-12">
+    <HorizontalTextImage textContent={
+        <>
+            <div className="mb-4"><strong>Personalized Bouquet Generation</strong></div>
+            <div className="text-gray-500">Gemini model visualizes a custom bouquet design based on user inputs—including the recipient, occasion, emotions, and flower preferences. The result can be archived or shared directly with other users.</div>
+        </>
+    }
+    image="/projects/palmful/palmful-feature-0.gif"
+    />
+
+    <HorizontalTextImage textContent={
+        <>
+            <div className="mb-4"><strong>Bouquet Archiving</strong></div>
+            <div className="text-gray-500">Generated bouquets are saved with the recipient, message, and date, allowing users to revisit the collection anytime and recall the moment.</div>
+        </>
+    }
+    image="/projects/palmful/palmful-feature-1.png"
+    rightText={true}
+    />
+</section>
+
+<br/>
+
+## Promoting User Engagement with Interactions
+For engaging user experience, I implemented various interactions and animations using Framer-motion and GSAP.
+
+<section className="grid md:grid-cols-2 grid-cols-1 w-full mx-auto gap-4">
+    <ReactPlayer 
+      src="/projects/palmful/palmful-inter-0.mp4"
+      className="rounded-lg"
+      width="100%"
+      height="100%"
+      muted={true}
+      loop={true}
+      playing={true}
+      playsinline={true}
+    />
+    <ReactPlayer 
+      src="/projects/palmful/palmful-inter-1.mp4"
+      className="rounded-lg"
+      width="100%"
+      height="100%"
+      muted={true}
+      loop={true}
+      playing={true}
+      playsinline={true}
+    />
+</section>
+
+<br/>
+
+## Engineering with Domain Knowledge
+To solve issues with AI hallucinations and unrealistic combinations, our team acquired domain knowledge firsthand and applied it to engineering.
+
+<div className="flex flex-row mx-auto justify-center gap-2 md:gap-4">
+    <img 
+    src="/projects/palmful/IMG_5262.JPG" 
+    alt="Florist Class" 
+    className="rounded-lg w-1/2 md:max-w-1/4 h-64 object-cover" 
+    />
+    <img 
+    src="/projects/palmful/IMG_5584.JPG" 
+    alt="Florist Class" 
+    className="rounded-lg w-1/2 md:max-w-1/4 h-64 object-cover" 
+    />
+</div>
+<p className="text-center text-gray-500">Taking a florist class to learn floral arrangement principles</p>
+
+By learning Color Theory, Seasonality, and Floriography, we built a "Rule-based Logic" pipeline that filters out logically inconsistent combinations before the AI generation process.
+
+<br/>
+
+## What I did
+- Project Management: Defined problems via desk & user research, designed IA/User Flow, and gave final presentation.
+- Frontend Development: Developed the React web application and integrated APIs.
+- Figma Design: Designed key features including the Archiving page, Friend tab, and Design Result page.
+- Interaction Design: Implemented interactions using Framer-motion and GSAP.
+
+<br/>
+
+## Result
+The project was highly recognized, winning 2nd Place out of 22 teams at the 2025 Kyung Hee University Artistic Software Contest.
+<img src="/projects/palmful/IMG_5553.JPG" alt="Result" className="rounded-lg h-80 object-cover mx-auto"/>
+<p className="text-center text-gray-500">Our team!</p>
+
+## Tools Used (by me)
+<ToolTag tags={["React", "Gemini API", "Figma"]}/>
